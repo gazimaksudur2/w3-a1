@@ -7,12 +7,19 @@
 
     <title>Stay &amp; Play</title>
 
+    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -20,12 +27,16 @@
   </head>
 
   <body>
+    <!-- Navbar Starts Here -->
     <header class="site-header">
       <div class="container nav-container">
         <a href="#" class="logo" aria-label="Stay and Play home">
-          <span> Stay &amp; Play </span>
-
-          <span class="logo-icon"> ✦ </span>
+          <img
+            class="logo-icon"
+            src="assets/icons/home_water_logo.svg"
+            alt="stay and play brand logo"
+          />
+          <span class="logo-text"> Stay &amp; Play </span>
         </a>
 
         <nav class="nav-menu" aria-label="Primary navigation">
@@ -37,46 +48,146 @@
 
           <a href="#" class="nav-link"> Group Travel </a>
 
-          <a href="#" class="btn btn-primary"> Tee Time </a>
+          <a href="#" class="btn btn-primary"> Book a Tee Time </a>
+
+          <div class="nav-search">
+            <input type="search" placeholder="Search" aria-label="Search" />
+
+            <button type="submit" aria-label="Submit search">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+
+                <line
+                  x1="16.65"
+                  y1="16.65"
+                  x2="21"
+                  y2="21"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
+    <!-- Navbar Ends Here -->
 
     <main>
-      <section class="hero-section">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <span class="badge"> New Release </span>
+      <!-- Course Hero Section Starts Here -->
+      <section class="course-section">
+        <div class="container">
+          <!-- Breadcrumb -->
 
-            <h1 class="hero-title">
-              Build clean, modern designs effortlessly.
-            </h1>
+          <div class="breadcrumb">
+            Golf Course
+            <span>›</span>
+            Florida
+            <span>›</span>
+            Orlando
+            <span>›</span>
+            Eagle Creek Golf Club
+          </div>
 
-            <p class="hero-subtitle">
-              A production-ready starting template set up with modern CSS
-              variables, responsive typography, and an organized asset
-              structure.
-            </p>
+          <!-- Title -->
 
-            <div class="cta-group">
-              <a href="#" class="btn btn-primary"> Explore Project </a>
+          <div class="course-header">
+            <h1>Eagle Creek Golf Club, Stay and Play</h1>
 
-              <a href="#" class="btn btn-outline"> Documentation </a>
+            <div class="course-meta">
+              <span class="stars">
+                <img src="assets/icons/rating-star-filled.svg" alt="rating stars">
+                <img src="assets/icons/rating-star-filled.svg" alt="rating stars">
+                <img src="assets/icons/rating-star-filled.svg" alt="rating stars">
+                <img src="assets/icons/rating-star-filled.svg" alt="rating stars">
+                <img src="assets/icons/rating-star-filled.svg" alt="rating stars">
+              </span>
+
+              <strong> 9.0 </strong>
+
+              <span> (3 REVIEWS) </span>
+
+              <span> | </span>
+
+              <div>
+                <img src="assets/icons/clock-circle.svg" alt="clock icon">
+                <p>TEE TIMES DAILY 7 AM - 6 PM</p>
+              </div>
             </div>
           </div>
 
-          <div class="hero-media">
-            <div class="placeholder-box">
-              <span> Asset Preview </span>
+          <!-- Main Content -->
+
+          <div class="course-layout">
+            <!-- Gallery -->
+
+            <div class="gallery">
+              <div class="gallery-main">
+                <img src="assets/images/hero-golf-club1.jpg" alt="Golf Club Hero Image1" />
+              </div>
+
+              <div class="gallery-side">
+                <img src="assets/images/hero-golf-club2.jpg" alt="Golf Club Hero Image2" />
+
+                <img src="assets/images/hero-golf-club3.jpg" alt="Golf Club Hero Image3" />
+              </div>
             </div>
+
+            <!-- Booking Card -->
+
+            <aside class="booking-card">
+              <h2>
+                USD $600
+                <small> AVG PER NIGHT </small>
+              </h2>
+
+              <div class="date-row">
+                <button>
+                  CHECK-IN
+                  <strong> 19 SEP 2025 </strong>
+                </button>
+
+                <button>
+                  CHECK-OUT
+                  <strong> 21 SEP 2025 </strong>
+                </button>
+              </div>
+
+              <button class="guest-select">
+                GUESTS
+                <strong> 3 GUESTS, 1 INFANT, 1 PET </strong>
+              </button>
+
+              <div class="availability">✓ Dates selected are available</div>
+
+              <div class="price-box">
+                <span> TOTAL PRICE </span>
+
+                <strong> USD $600 </strong>
+              </div>
+
+              <button class="check-button">CHECK AVAILABILITY</button>
+            </aside>
           </div>
         </div>
       </section>
+      <!-- Course Hero Section Ends Here -->
     </main>
 
     <footer class="travel-footer">
-      <div class="footer-overlay"></div>
-
       <div class="footer-container">
         <nav class="footer-links" aria-label="Footer navigation">
           <ul>
