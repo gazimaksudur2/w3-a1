@@ -553,8 +553,14 @@ button {
   gap: 20px;
 
   align-items: start;
+}
 
-  margin-top: 10px;
+.course-main-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
 }
 
 /* ==========================================
@@ -575,6 +581,13 @@ button {
   border-radius: 8px;
 }
 
+.gallery-item {
+
+  position:relative;
+
+  min-height: 0;
+}
+
 .gallery img {
   width: 100%;
 
@@ -590,11 +603,15 @@ button {
 }
 
 .gallery-side {
-  display: grid;
 
-  grid-template-rows: 1fr 1fr;
+  display:grid;
 
-  gap: 3px;
+  grid-template-rows:repeat(2, minmax(0, 1fr));
+
+  gap:3px;
+
+  min-height:0;
+
 }
 
 .gallery-side img {
@@ -602,161 +619,903 @@ button {
 }
 
 /* ==========================================
+   GALLERY LAST IMAGE BUTTON
+========================================== */
+
+.gallery-item--last {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+.gallery-item--last img {
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+.gallery-view-button {
+
+  position:absolute;
+
+  right:14px;
+
+  bottom:14px;
+
+  z-index:5;
+
+
+  background:rgba(0,0,0,0.25);
+
+  backdrop-filter:blur(2px);
+
+
+  border:1px solid white;
+
+  color:white;
+
+
+  padding:8px 18px;
+
+  border-radius:30px;
+
+
+  font-family:var(--font-heading);
+
+  font-size:11px;
+
+  font-weight:600;
+
+  text-transform:uppercase;
+
+  letter-spacing:.5px;
+
+
+  cursor:pointer;
+
+}
+
+/* ==========================================
+   COURSE OVERVIEW BAR
+========================================== */
+
+/* ==========================================
+   COURSE OVERVIEW DESCRIPTION
+========================================== */
+
+.course-overview-description {
+  padding: 14px 22px 10px;
+}
+
+.course-overview-description p {
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: var(--text-muted);
+}
+
+.read-more-link {
+  margin-left: 8px;
+
+  color: var(--text-dark);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  text-decoration: underline;
+
+  text-underline-offset: 3px;
+
+  white-space: nowrap;
+}
+
+.read-more-link span {
+  margin-left: 5px;
+
+  font-size: 15px;
+}
+
+.course-overview-bar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: #f4faf3;
+
+  width: 100%;
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  padding: 18px 22px;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+}
+
+.course-overview-details {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 18px 22px;
+
+  border-top: 1px solid var(--border);
+}
+
+.course-overview-title h2 {
+  font-family: var(--font-heading);
+
+  font-size: 16px;
+
+  line-height: 1.15;
+
+  text-transform: uppercase;
+
+  color: var(--text-dark);
+}
+
+.course-highlight {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  text-transform: uppercase;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: var(--text-main);
+}
+
+.course-highlight img {
+  width: 32px;
+
+  height: 32px;
+}
+
+.gallery,
+.course-overview-bar {
+  grid-column: 1;
+}
+
+.highlight-button {
+  height: 40px;
+
+  padding: 0 28px;
+
+  border-radius: 30px;
+
+  background: transparent;
+
+  border: 1px solid var(--green-dark);
+
+  color: var(--green-dark);
+
+  text-transform: uppercase;
+
+  font-family: var(--font-heading);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.7px;
+}
+
+.highlight-button:hover {
+  background: var(--green-soft);
+}
+
+/* ==========================================
    BOOKING CARD
 ========================================== */
 
 .booking-card {
-  background: var(--card-background);
 
-  border: 1px solid var(--border);
+  background:white;
 
-  border-radius: var(--radius-md);
+  border:1px solid var(--border);
 
-  padding: 20px;
+  border-radius:8px;
 
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding:18px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+
 }
 
-/* Price */
+
 
 .booking-card h2 {
-  display: flex;
 
-  align-items: baseline;
+  display:flex;
 
-  gap: 8px;
+  align-items:baseline;
 
-  font-size: 24px;
+  gap:6px;
 
-  color: var(--text-dark);
+  margin-bottom:16px;
 
-  margin-bottom: 20px;
+  color:var(--text-dark);
+
+  font-size:20px;
+
 }
 
-.booking-card small {
-  font-size: 11px;
 
-  font-weight: 500;
 
-  color: var(--text-muted);
+.booking-card h2 small {
+
+  font-size:11px;
+
+  color:var(--text-muted);
+
+  font-weight:500;
+
 }
+
+
 
 /* Date fields */
 
 .date-row {
-  display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  display:grid;
 
-  gap: 8px;
+  grid-template-columns:1fr 1fr;
+
+  gap:6px;
+
 }
 
-.date-row button,
-.guest-select {
-  background: white;
 
-  border: 1px solid #cfd8d1;
 
-  padding: 12px;
+.date-field {
 
-  border-radius: 5px;
+  position:relative;
 
-  text-align: left;
+  height:46px;
 
-  font-size: 11px;
+  background:white;
 
-  color: var(--text-muted);
+  border:1px solid #cfd8d1;
 
-  cursor: pointer;
+  border-radius:5px;
+
+  padding:7px 35px 7px 12px;
+
+  text-align:left;
+
 }
 
-.date-row strong,
+
+
+.date-field span,
+.guest-select span {
+
+  display:block;
+
+  font-size:10px;
+
+  color:#7a847d;
+
+}
+
+
+
+.date-field strong,
 .guest-select strong {
-  display: block;
 
-  margin-top: 3px;
+  display:block;
 
-  font-size: 13px;
+  color:var(--text-dark);
 
-  color: var(--text-dark);
+  font-size:12px;
+
 }
 
-/* Guest selector */
+
+
+.date-field img,
+.guest-select img {
+
+  position:absolute;
+
+  right:12px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:14px;
+
+  height:14px;
+
+}
+
+
+
+/* Guests */
 
 .guest-select {
-  width: 100%;
 
-  margin-top: 10px;
+  position:relative;
+
+  width:100%;
+
+  height:58px;
+
+  margin-top:8px;
+
+  background:white;
+
+  border:1px solid #cfd8d1;
+
+  border-radius:5px;
+
+  padding:8px 40px 8px 12px;
+
+  text-align:left;
+
 }
+
+
 
 /* Availability */
 
 .availability {
-  margin: 15px 0;
 
-  padding: 12px;
+  display:flex;
 
-  background: #edf7ef;
+  align-items:center;
 
-  border-radius: 4px;
+  gap:8px;
 
-  font-size: 12px;
+  margin-top:6px;
 
-  color: #36854b;
+  padding:10px;
+
+  background:#edf6fb;
+
+  border:1px solid #d5e7ef;
+
+  border-radius:4px;
+
+  color:#66737b;
+
+  font-size:12px;
+
 }
 
-/* Price box */
 
-.price-box {
+
+.availability img {
+
+  width:15px;
+
+  height:15px;
+
+}
+
+
+
+/* Price */
+
+.price-summary {
+
+  margin-top:8px;
+
+  border-top:1px solid #e5e5e5;
+
+}
+
+
+
+.price-row {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  padding:12px 8px;
+
+  font-size:12px;
+
+}
+
+
+
+.price-row span {
+
+  color:#68736c;
+
+}
+
+
+
+.price-row strong {
+
+  color:var(--text-dark);
+
+}
+
+
+
+.price-row.total {
+
+  border-top:1px solid #eeeeee;
+
+}
+
+
+
+.price-row.total span,
+.price-row.total strong {
+
+  font-size:15px;
+
+  font-weight:700;
+
+}
+
+
+
+/* Button */
+
+.check-button {
+
+  width:100%;
+
+  height:48px;
+
+  border:none;
+
+  border-radius:4px;
+
+  background:#6ecbe0;
+
+  color:#12313b;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  letter-spacing:.5px;
+
+  cursor:pointer;
+
+}
+
+
+
+/* Booking redirect */
+
+.booking-redirect {
+
+  text-align:center;
+
+  font-size:12px;
+
+  padding:12px 0;
+
+  color:#59655f;
+
+}
+
+
+
+.booking-redirect strong {
+
+  color:#003b7a;
+
+  font-size:15px;
+
+}
+
+
+
+/* Hot Deal */
+
+.hot-deal {
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:8px;
+
+  margin:0 -18px;
+
+  padding:10px;
+
+  background:#eef6fb;
+
+  border-top:1px solid var(--border);
+
+  border-bottom:1px solid var(--border);
+
+  font-size:12px;
+
+}
+
+
+
+.hot-deal img {
+
+  width:16px;
+
+  height:16px;
+
+}
+
+
+
+/* Alternative */
+
+.alternative-stay {
+
+  margin-top:10px;
+
+  padding:12px;
+
+  text-align:center;
+
+  background:#eef6fb;
+
+  border:1px solid #d5e7ef;
+
+  border-radius:8px;
+
+  font-size:12px;
+
+  color:#394641;
+
+}
+
+
+
+.alternative-stay a {
+
+  color:#3b8bb5;
+
+  text-decoration:underline;
+
+}
+
+/* ==========================================
+   NEARBY STAY SECTION
+========================================== */
+
+.nearby-stay-section {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.stay-section-header h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  color: var(--text-dark);
+  margin-bottom: 18px;
+}
+
+.stay-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  background: white;
+  border: 1px solid var(--border);
+
+  padding: 10px 18px;
+
+  border-radius: var(--radius-pill);
+
+  font-size: 13px;
+  text-transform: uppercase;
+
+  color: var(--text-main);
+
+  cursor: pointer;
+}
+
+/* Main layout */
+
+.stay-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    340px;
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+/* Property Cards */
+
+.property-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+.property-card {
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-sm);
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.property-image {
+  height: 190px;
+
+  position: relative;
+}
+
+.property-image > img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.course-badge {
+  position: absolute;
+
+  top: 12px;
+
+  left: 12px;
+
+  background: rgba(30, 45, 35, 0.75);
+
+  color: white;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+}
+
+.image-icons {
+  position: absolute;
+
+  right: 12px;
+
+  top: 12px;
+
   display: flex;
 
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 15px 0;
-
-  border-top: 1px solid #eeeeee;
+  gap: 8px;
 }
 
-.price-box span {
+.image-icons img {
+  width: 24px;
+
+  height: 24px;
+
+  background: white;
+
+  padding: 5px;
+
+  border-radius: 50%;
+}
+
+/* Card content */
+
+.property-body {
+  padding: 14px;
+}
+
+.property-rating {
   font-size: 12px;
 
-  color: var(--text-muted);
+  color: #4b9655;
+
+  margin-bottom: 8px;
 }
 
-.price-box strong {
+.property-rating span {
+  background: #4b9655;
+
+  color: white;
+
+  border-radius: 50%;
+
+  padding: 2px 5px;
+}
+
+.property-body h3 {
+  font-family: var(--font-heading);
+
   font-size: 18px;
 
   color: var(--text-dark);
 }
 
-/* CTA */
+.booking-source {
+  color: #6a756e;
 
-.check-button {
-  width: 100%;
-
-  padding: 15px;
-
-  border: none;
-
-  border-radius: 5px;
-
-  background: #72cce0;
-
-  color: #14323b;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition: var(--transition);
+  font-size: 13px;
 }
 
-.check-button:hover {
-  background: #59bfd7;
+.property-price {
+  color: #4a9454;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.property-details {
+  font-size: 12px;
+
+  color: var(--text-muted);
+
+  line-height: 1.5;
+}
+
+.property-location {
+  font-size: 12px;
+
+  margin: 10px 0;
+}
+
+.property-actions {
+  display: flex;
+
+  gap: 8px;
+}
+
+.property-actions .btn {
+  flex: 1;
+
+  height: 34px;
+
+  font-size: 11px;
+
+  padding: 0;
+}
+
+/* Map */
+
+.stay-map {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 900px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+}
+
+.stay-map > img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.map-price-marker {
+  position: absolute;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 5px 12px;
+
+  font-size: 12px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.marker-one {
+  top: 35%;
+
+  left: 45%;
+}
+
+.marker-two {
+  top: 60%;
+
+  left: 30%;
+}
+
+.marker-three {
+  bottom: 20%;
+
+  right: 25%;
+}
+
+.map-controls {
+  position: absolute;
+
+  bottom: 15px;
+
+  left: 15px;
+
+  display: flex;
+}
+
+.map-controls button {
+  border: 1px solid var(--border);
+
+  background: white;
+
+  padding: 8px 14px;
+
+  font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .stay-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-map {
+    min-height: 400px;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-section-header h2 {
+    font-size: 25px;
+  }
 }
 
 /* ==========================================================================
@@ -972,204 +1731,148 @@ button {
    RESPONSIVE
 ========================================================================== */
 
-
 /* ==========================================
    TABLET + SMALL LAPTOP
 ========================================== */
 
 @media (max-width: 1100px) {
-
-
   /* Course section */
 
   .course-layout {
-
     grid-template-columns: 1fr;
-
   }
 
+  .course-overview-bar {
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
 
   .gallery {
+    height: auto;
 
-    height:auto;
-
-    grid-template-columns:1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .gallery-main {
-
-    height:420px;
-
+    height: 420px;
   }
-
 
   .gallery-side {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: 1fr 1fr;
 
-    grid-template-columns:1fr 1fr;
-
-    height:200px;
-
+    height: 200px;
   }
-
-
 
   /* Footer */
 
   .footer-container {
-
-    flex-direction:column;
-
+    flex-direction: column;
   }
-
 
   .footer-right {
-
-    width:100%;
-
+    width: 100%;
   }
-
 
   .footer-links {
-
-    grid-template-columns:repeat(2,150px);
-
+    grid-template-columns: repeat(2, 150px);
   }
-
 }
-
-
 
 /* ==========================================
    MOBILE
 ========================================== */
 
-@media (max-width:700px) {
-
-
+@media (max-width: 700px) {
   /* Footer background */
 
   .travel-footer {
+    background-image: var(--footer-bg-mobile);
 
-    background-image:var(--footer-bg-mobile);
-
-    background-position:center;
-
+    background-position: center;
   }
-
-
 
   /* Header */
 
   .nav-container {
+    flex-direction: column;
 
-    flex-direction:column;
-
-    gap:20px;
-
+    gap: 20px;
   }
-
 
   .nav-menu {
+    flex-wrap: wrap;
 
-    flex-wrap:wrap;
+    justify-content: center;
 
-    justify-content:center;
-
-    gap:24px;
-
+    gap: 24px;
   }
-
-
 
   /* Course */
 
   .course-header h1 {
-
-    font-size:26px;
-
+    font-size: 26px;
   }
-
 
   .course-meta {
-
-    flex-wrap:wrap;
-
+    flex-wrap: wrap;
   }
 
+  .course-overview-bar {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .course-highlight {
+    width: 100%;
+  }
+
+  .highlight-button {
+    width: 100%;
+  }
 
   .gallery-main {
-
-    height:350px;
-
+    height: 350px;
   }
-
 
   .gallery-side {
-
-    height:160px;
-
+    height: 160px;
   }
-
-
 
   /* Footer */
 
   .footer-links {
-
-    grid-template-columns:1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .selectors {
-
-    flex-direction:column;
-
+    flex-direction: column;
   }
-
 
   .select-box {
-
-    width:100%;
-
+    width: 100%;
   }
-
 
   .brand-area {
+    flex-direction: column;
 
-    flex-direction:column;
-
-    align-items:flex-start;
-
+    align-items: flex-start;
   }
-
 }
-
-
 
 /* ==========================================
    EXTRA SMALL MOBILE
 ========================================== */
 
-@media (max-width:480px) {
-
-
+@media (max-width: 480px) {
   .gallery-side {
-
-    display:none;
-
+    display: none;
   }
-
 
   .course-meta {
-
-    gap:6px;
-
+    gap: 6px;
   }
-
-
 }
