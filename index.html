@@ -6,7 +6,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Stay &amp; Play</title>
+  <link rel="icon" type="image/png" href="assets/icons/home_water_logo.svg" />
+
+  <title>Stay&amp;Play</title>
 
   <!-- Google Fonts -->
 
@@ -15,12 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet" />
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+  rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -115,17 +113,20 @@
               <!-- Main item -->
               <div class="gallery-item gallery-item--main">
                 <!-- <img src="assets/images/hero-golf-club1.jpg" alt="Scenic view of Eagle Creek Golf Club Orlando" /> -->
-                <img src="https://images.pexels.com/photos/4475691/pexels-photo-4475691.jpeg" alt="Scenic view of Eagle Creek Golf Club Orlando" />
+                <img src="https://images.pexels.com/photos/4475691/pexels-photo-4475691.jpeg"
+                  alt="Scenic view of Eagle Creek Golf Club Orlando" />
               </div>
 
               <!-- Side items -->
               <div class="gallery-side">
                 <div class="gallery-item">
-                  <img src="https://images.pexels.com/photos/27309420/pexels-photo-27309420.jpeg" alt="Golf course landscape at Eagle Creek Golf Club" />
+                  <img src="https://images.pexels.com/photos/27309420/pexels-photo-27309420.jpeg"
+                    alt="Golf course landscape at Eagle Creek Golf Club" />
                 </div>
 
                 <div class="gallery-item gallery-item--last">
-                  <img src="https://images.pexels.com/photos/12485962/pexels-photo-12485962.jpeg" alt="Golfers enjoying Eagle Creek Golf Club" />
+                  <img src="https://images.pexels.com/photos/12485962/pexels-photo-12485962.jpeg"
+                    alt="Golfers enjoying Eagle Creek Golf Club" />
 
                   <button class="gallery-view-button" type="button">
                     View All 20 Images
@@ -133,6 +134,74 @@
                 </div>
               </div>
             </div>
+
+            <!-- Stay & Play Quick Panel Starts Here (tablet & below only) -->
+            <section class="stay-play-panel" aria-label="Quick stay and play pricing">
+              <div class="stay-play-col stay-play-col--stay">
+                <div class="stay-play-col__header">
+                  <span class="stay-play-col__icon stay-play-col__icon--stay">
+                    <img src="assets/icons/sleep.svg" alt="sleep in a Bedroom" aria-hidden="true" />
+                  </span>
+                  <h3>Stay</h3>
+                </div>
+
+                <div class="stay-play-col__box">
+                  <div class="stay-play-stat">
+                    <strong>800+</strong>
+                    <span>Places to Stay Near By</span>
+                  </div>
+
+                  <div class="stay-play-col__divider"></div>
+
+                  <div class="stay-play-stat">
+                    <span class="stay-play-stat__prefix">From</span>
+                    <strong>$300</strong>
+                  </div>
+                </div>
+
+                <button class="btn stay-play-col__cta stay-play-col__cta--stay">
+                  Book a Place to Stay
+                </button>
+              </div>
+
+              <div class="stay-play-col stay-play-col--play">
+                <div class="stay-play-col__header">
+                  <span class="stay-play-col__icon stay-play-col__icon--play">
+                    <img src="assets/icons/golf-ball.png" alt="golf ball icon" aria-hidden="true" />
+                  </span>
+                  <h3>Play</h3>
+                </div>
+
+                <div class="stay-play-col__box stay-play-col__box--triple">
+                  <div class="stay-play-stat">
+                    <span>Peak</span>
+                    <strong>$100</strong>
+                    <span>Round</span>
+                  </div>
+
+                  <div class="stay-play-col__divider"></div>
+
+                  <div class="stay-play-stat">
+                    <span>Off-Peak</span>
+                    <strong>$75</strong>
+                    <span>Round</span>
+                  </div>
+
+                  <div class="stay-play-col__divider"></div>
+
+                  <div class="stay-play-stat">
+                    <span>Twilight</span>
+                    <strong>$60</strong>
+                    <span>Round</span>
+                  </div>
+                </div>
+
+                <button class="btn stay-play-col__cta stay-play-col__cta--play">
+                  Book a Tee Time
+                </button>
+              </div>
+            </section>
+            <!-- Stay & Play Quick Panel Ends Here -->
 
             <!-- Course Overview Bar -->
             <!-- Description -->
@@ -177,10 +246,1004 @@
 
               <button class="highlight-button">More Course Highlights</button>
             </section>
+            <!-- Nearby Stay Section Starts -->
+            <section class="nearby-stay-section">
+              <header class="stay-section-header">
+                <h2>
+                  Find the Perfect Stay Near Eagle Creek Golf Club in Orlando, FL
+                </h2>
+
+                <div class="stay-filters" aria-label="Stay filters">
+                  <button class="filter-button">
+                    Stay Within 10 Miles
+                    <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
+                  </button>
+
+                  <button class="filter-button">
+                    Property Type
+                    <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
+                  </button>
+
+                  <button class="filter-button">
+                    2 Bedroom
+                    <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
+                  </button>
+
+                  <button class="filter-button">
+                    Most Popular
+                    <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
+                  </button>
+                </div>
+              </header>
+
+              <div class="stay-content">
+                <!-- Property Cards -->
+                <div class="property-grid">
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort1.jpg"
+                        alt="Luxury golf resort near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>Fairway Greens Resort</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort2.jpg"
+                        alt="The Par View Lodge near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>The Par View Lodge</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort3.jpg"
+                        alt="Coastal Links Retreat near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>Coastal Links Retreat</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort4.jpg"
+                        alt="Eagle's Nest Golf Resort near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>Eagle's Nest Golf Resort</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort5.jpg"
+                        alt="Parview Lakeside Hotel near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>Parview Lakeside Hotel</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="property-card">
+                    <div class="property-image">
+                      <img src="assets/images/wide-resort6.jpg"
+                        alt="Bunker Bay Retreat near Eagle Creek Golf Club Orlando" />
+
+                      <span class="course-badge"> 50+ Golf Courses Nearby </span>
+
+                      <div class="image-icons">
+                        <img src="assets/icons/leaf.svg" alt="Leaf icon" />
+                        <img src="assets/icons/marker.svg" alt="Marker icon" />
+                        <img src="assets/icons/heart.svg" alt="Heart icon" />
+                      </div>
+                    </div>
+
+                    <div class="property-body">
+                      <div class="property-rating">
+                        <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
+                        10.0 Exceptional
+                        <strong class="property-rating-separator">|</strong>
+                        <span class="property-rating-reviews">12 Reviews</span>
+                      </div>
+
+                      <h3>Bunker Bay Retreat</h3>
+
+                      <p class="booking-source">Booking.com</p>
+
+                      <strong class="property-price-container">
+                        From $295
+                        <img src="assets/icons/info.svg" alt="Info circle icon" />
+                      </strong>
+
+                      <p class="property-details">
+                        Shuttle Service To The Course · Golf Club Storage ·
+                        Pet-Friendly · On-Site Dining Options · Sleeps 8
+                      </p>
+
+                      <p class="property-location">Florida &gt; Orlando</p>
+
+                      <div class="property-actions">
+                        <button class="btn btn-outline">Learn More</button>
+
+                        <button class="btn btn-primary">See Dates</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Map Area -->
+                <aside class="stay-map">
+                  <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39712.39162781086!2d-81.27410946119903!3d28.385664522312137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8a16525f07e3%3A0xc9a1bcf03126d19d!2sEagle%20Creek%20Golf%20Clubhouse!5e0!3m2!1sen!2sbd!4v1788542599735!5m2!1sen!2sbd"
+                    style="border: 0; border-radius: 8px; position: absolute; inset: 0; z-index: 1;">
+                  </iframe>
+                </aside>
+                
+                <div class="stay-controls">
+                  <nav class="pagination" aria-label="Property listings pagination">
+                    <button class="pagination__prev" disabled>Previous</button>
+                
+                    <ul class="pagination__list">
+                      <li>
+                        <button class="pagination__page pagination__page--active" aria-current="page">
+                          01
+                        </button>
+                      </li>
+                      <li>
+                        <button class="pagination__page">02</button>
+                      </li>
+                      <li>
+                        <button class="pagination__page">03</button>
+                      </li>
+                      <li>
+                        <button class="pagination__page">04</button>
+                      </li>
+                      <li>
+                        <button class="pagination__page">05</button>
+                      </li>
+                      <li class="pagination__ellipsis" aria-hidden="true">...</li>
+                    </ul>
+                
+                    <button class="pagination__next">Next</button>
+                  </nav>
+                
+                  <button class="btn btn-outline stay-explore">
+                    View all places to stay
+                  </button>
+                </div>
+              </div>
+            </section>
+            <!-- Nearby Stay Section Ends -->
+
+            <!-- Club Highlights Section Starts Here -->
+            <section class="club-highlights" aria-labelledby="club-highlights-title">
+              <div class="club-highlights-panel">
+                <h2 id="club-highlights-title" class="club-highlights-title">
+                  Eagle Creek Golf Club Highlights
+                </h2>
+
+                <div class="club-highlights-grid">
+                  <!-- Card 1 -->
+                  <article class="highlight-detail-card">
+                    <img class="highlight-detail-card__icon" src="assets/icons/golf-flag.svg"
+                      alt="Par and difficulty icon" />
+                    <h3>Par and Difficulty</h3>
+                    <p>Par 72 (Front 9: Par 36, Back 9: Par 36)</p>
+                    <p>Course Rating: 71.4</p>
+                    <p>Course Slope: 113</p>
+                    <p class="highlight-detail-card__muted">
+                      Challenging for experts, enjoyable for intermediates, and
+                      welcoming for beginners.
+                    </p>
+                  </article>
+
+                  <!-- Card 2 -->
+                  <article class="highlight-detail-card">
+                    <img class="highlight-detail-card__icon" src="assets/icons/measuring-tape-tool.svg"
+                      alt="Yardage icon" />
+                    <h3>Yardage</h3>
+                    <p>7,198 yards from the championship tees</p>
+                    <h4>Tee Box Options</h4>
+                    <ul class="highlight-detail-card__list">
+                      <li>Championship: 7,198 yards</li>
+                      <li>Regular: 6,720 yards</li>
+                      <li>Forward: 5,942 yards</li>
+                      <li>Beginner: 5,152 yards</li>
+                    </ul>
+                  </article>
+
+                  <!-- Card 3 -->
+                  <article class="highlight-detail-card">
+                    <div class="highlight-detail-block">
+                      <img class="highlight-detail-card__icon" src="assets/icons/keys.svg" alt="Public course icon" />
+                      <h3>Public Course</h3>
+                      <p class="highlight-detail-card__muted">No stay required</p>
+                    </div>
+
+                    <div class="highlight-detail-block">
+                      <img class="highlight-detail-card__icon" src="assets/icons/golf-cart.svg"
+                        alt="Cart recommended icon" />
+                      <h3>Cart Recommended</h3>
+                      <p class="highlight-detail-card__muted">Walking allowed</p>
+                    </div>
+                  </article>
+
+                  <!-- Card 4 -->
+                  <article class="highlight-detail-card">
+                    <img class="highlight-detail-card__icon" src="assets/icons/golf-ball-running.svg"
+                      alt="Course style icon" />
+                    <h3>Course Style</h3>
+                    <p>Parkland</p>
+                    <hr class="highlight-detail-card__divider" />
+                    <h4>Notable Features</h4>
+                    <p class="highlight-detail-card__muted">
+                      Tree-lined fairways, undulating greens, and strategically placed
+                      bunkers. Water hazards come into play on several holes.
+                    </p>
+                  </article>
+                </div>
+
+                <ul class="club-features-grid">
+                  <li class="club-feature-item">
+                    <img src="assets/icons/golf-stick.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>18-Hole Championship Course</h4>
+                      <p>Designed for all skill levels with challenging layouts.</p>
+                    </div>
+                  </li>
+
+                  <li class="club-feature-item">
+                    <img src="assets/icons/clock-circle.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>Tee Time Flexibility</h4>
+                      <p>Convenient booking options to suit your schedule.</p>
+                    </div>
+                  </li>
+
+                  <li class="club-feature-item">
+                    <img src="assets/icons/construction-worker.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>Architect and History</h4>
+                      <p>
+                        Designed by renowned architect Ron Garl, the course has hosted
+                        regional tournaments.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="club-feature-item">
+                    <img src="assets/icons/building.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>Luxury Clubhouse</h4>
+                      <p>Relax with premium dining, locker rooms, and event spaces.</p>
+                    </div>
+                  </li>
+
+                  <li class="club-feature-item">
+                    <img src="assets/icons/teach.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>Golf Lessons Available</h4>
+                      <p>Expert instruction for players of all levels.</p>
+                    </div>
+                  </li>
+
+                  <li class="club-feature-item">
+                    <img src="assets/icons/shopping-bag.svg" alt="" aria-hidden="true" />
+                    <div>
+                      <h4>Pro Shop</h4>
+                      <p>Fully stocked with top-tier gear, apparel, and accessories.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- Club Highlights Section Ends Here -->
+
+            <!-- Guest Reviews Section Starts Here -->
+            <section class="guest-reviews" aria-labelledby="guest-reviews-title">
+              <div class="container">
+                <h2 id="guest-reviews-title" class="section-heading">
+                  Guest Reviews for Eagle Creek Golf Club
+                </h2>
+
+                <div class="reviews-grid">
+                  <article class="review-card">
+                    <div class="review-card__meta">
+                      <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
+                      <div class="review-card__stars" aria-label="5 out of 5 stars">
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <p class="review-card__text">
+                      Eagle Creek challenges your strategy and precision, making it a
+                      perfect blend of fun and competitive play.
+                    </p>
+
+                    <div class="review-card__author">
+                      <img class="review-card__avatar" src="assets/images/male-profile1.jpg"
+                        alt="profile picture of John Smith" />
+                      <span>Golf Pro John Smith</span>
+                    </div>
+                  </article>
+
+                  <article class="review-card">
+                    <div class="review-card__meta">
+                      <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
+                      <div class="review-card__stars" aria-label="4 out of 5 stars">
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-empty.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <p class="review-card__text">
+                      Average rating: 4.8/5 stars. Verified golfers praise the course
+                      conditions and excellent service.
+                    </p>
+
+                    <div class="review-card__author">
+                      <img class="review-card__avatar" src="assets/images/male-profile2.jpg"
+                        alt="profile picture of John Smith" />
+                      <span>Golf Pro John Smith</span>
+                    </div>
+                  </article>
+
+                  <article class="review-card">
+                    <div class="review-card__meta">
+                      <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
+                      <div class="review-card__stars" aria-label="4 out of 5 stars">
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-filled.svg" alt="" />
+                        <img src="assets/icons/rating-star-empty.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <p class="review-card__text">
+                      Lorem ipsum odoconse ctetue adi iscinama monuam adipiscing eleifen
+                      hendre himen aeos dictum.
+                    </p>
+
+                    <div class="review-card__author">
+                      <img class="review-card__avatar" src="assets/images/male-profile3.jpg"
+                        alt="profile picture of John Smith" />
+                      <span>Golf Pro John Smith</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <!-- Guest Reviews Section Ends Here -->
+
+            <!-- Course Features Section Starts Here -->
+            <section class="course-features" aria-labelledby="course-features-title">
+              <div class="container">
+                <h2 id="course-features-title" class="section-heading">
+                  Eagle Creek Course Features
+                </h2>
+
+                <div class="course-features-grid">
+                  <div class="feature-panel">
+                    <h3>Practice Facilities</h3>
+                    <ul class="feature-panel__list">
+                      <li>Driving range with target greens</li>
+                      <li>Putting green</li>
+                      <li>Short game area with sand bunkers</li>
+                      <li>Professional lessons available</li>
+                    </ul>
+                  </div>
+
+                  <div class="feature-panel feature-panel--wide">
+                    <h3>Amenities and Services</h3>
+
+                    <div class="feature-subsection">
+                      <h4>Caddies and Golf Cart Rentals</h4>
+                      <ul class="feature-panel__list">
+                        <li>
+                          Availability: Golf carts are equipped with GPS and available
+                          for rental. Caddie services are available upon request.
+                        </li>
+                        <li>Costs: Cart rentals: $25; Caddie fees: $40/hour.</li>
+                      </ul>
+                    </div>
+
+                    <hr class="feature-subsection__divider" />
+
+                    <div class="feature-subsection">
+                      <h4>On-Course Food and Beverage</h4>
+                      <ul class="feature-panel__list">
+                        <li>
+                          Multiple snack bars and a halfway house are conveniently
+                          located. Beverage carts circulate regularly.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Course Features Section Ends Here -->
+
+            <!-- Weather Section Starts Here -->
+            <section class="weather-section" aria-labelledby="weather-title">
+              <div class="container">
+                <h2 id="weather-title" class="section-heading">
+                  When is the Best Time of Year to Play at Eagle Creek Golf Club?
+                </h2>
+
+                <p class="weather-section__intro">
+                  Fall and Spring are the best seasons to play at Eagle Creek Golf Club.
+                  During these months, the weather is mild with minimal rain, providing
+                  perfect golfing conditions. Winter is also a great option for those
+                  seeking year-round play in Florida's warmer climate.
+                </p>
+
+                <div class="weather-panel">
+                  <!-- Forecast strip -->
+                  <div class="forecast-strip">
+                    <div class="forecast-strip__current">
+                      <strong>SUNDAY JAN 19</strong>
+                      <span>ORLANDO, FLORIDA</span>
+                    </div>
+
+                    <ul class="forecast-strip__days">
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">SUN</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">MON</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">TUE</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">WED</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">THU</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">FRI</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                      <li class="forecast-day">
+                        <span class="forecast-day__label">SAT</span>
+                        <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
+                        <span class="forecast-day__temp">-15.2 °C</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Seasons -->
+                  <div class="seasons">
+                    <h3 class="seasons__title">Explore Vancouver's Weather Patterns</h3>
+
+                    <ul class="seasons-grid">
+                      <li class="season-card">
+                        <img class="season-card__icon" src="assets/icons/gear.svg" alt="spring icon" />
+                        <h4>Spring (March to May)</h4>
+                        <p>
+                          Ideal for hiking, with blooming wildflowers and mild
+                          temperatures ranging from 60°F to 80°F. This is the most
+                          popular season, so booking early is recommended.
+                        </p>
+                        <hr class="season-card__divider" />
+                        <div class="season-card__temp">
+                          <h5>Average Temperature</h5>
+                          <p>Daytime: 60°F to 80°F</p>
+                          <p>Nighttime: 40°F to 55°F</p>
+                        </div>
+                      </li>
+
+                      <li class="season-card">
+                        <img class="season-card__icon" src="assets/icons/sun.svg" alt="summer icon" />
+                        <h4>Summer (June to August)</h4>
+                        <p>
+                          Ideal for hiking, with blooming wildflowers and mild
+                          temperatures ranging from 60°F to 80°F. This is the most
+                          popular season, so booking early is recommended.
+                        </p>
+                        <hr class="season-card__divider" />
+                        <div class="season-card__temp">
+                          <h5>Average Temperature</h5>
+                          <p>Daytime: 60°F to 80°F</p>
+                          <p>Nighttime: 40°F to 55°F</p>
+                        </div>
+                      </li>
+
+                      <li class="season-card">
+                        <img class="season-card__icon" src="assets/icons/fall.svg" alt="fall icon" />
+                        <h4>Fall (September to November)</h4>
+                        <p>
+                          Ideal for hiking, with blooming wildflowers and mild
+                          temperatures ranging from 60°F to 80°F. This is the most
+                          popular season, so booking early is recommended.
+                        </p>
+                        <hr class="season-card__divider" />
+                        <div class="season-card__temp">
+                          <h5>Average Temperature</h5>
+                          <p>Daytime: 60°F to 80°F</p>
+                          <p>Nighttime: 40°F to 55°F</p>
+                        </div>
+                      </li>
+
+                      <li class="season-card">
+                        <img class="season-card__icon" src="assets/icons/winter.svg" alt="winter icon" />
+                        <h4>Winter (December to February)</h4>
+                        <p>
+                          Cooler days and crisp evenings make it perfect for exploring
+                          Sedona's trails and enjoying the vibrant autumn colors.
+                        </p>
+                        <hr class="season-card__divider" />
+                        <div class="season-card__temp">
+                          <h5>Average Temperature</h5>
+                          <p>Daytime: 60°F to 80°F</p>
+                          <p>Nighttime: 40°F to 55°F</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Weather Section Ends Here -->
+
+            <!-- Other Golf Courses Section Starts Here -->
+            <section class="other-courses" aria-labelledby="other-courses-title">
+              <div class="container">
+                <h2 id="other-courses-title" class="section-heading">
+                  Other Golf Courses Near Eagle Creek Golf Club
+                </h2>
+
+                <div class="course-card-grid">
+                  <article class="course-card">
+                    <div class="course-card__image">
+                      <img src="https://images.pexels.com/photos/9736758/pexels-photo-9736758.jpeg"
+                        alt="Providence Golf Club at sunset" />
+                    </div>
+
+                    <div class="course-card__body">
+                      <h3>Providence Golf Club</h3>
+
+                      <p class="course-card__distance">
+                        <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
+                        6 MILES
+                      </p>
+
+                      <div class="course-card__stats">
+                        <span>
+                          <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
+                          YARDS: 7305
+                        </span>
+                        <span>
+                          <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
+                          PAR: 72
+                        </span>
+                      </div>
+
+                      <p class="course-card__quote">
+                        <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
+                        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"
+                          fill="#00967f">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                              .st0 {
+                                fill: none;
+                                stroke: #00967f;
+                                stroke-width: 2;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                              }
+                            </style>
+                            <circle class="st0" cx="16" cy="11" r="8"></circle>
+                            <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path>
+                            <line class="st0" x1="16" y1="29" x2="16" y2="23"></line>
+                            <path
+                              d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z">
+                            </path>
+                            <path
+                              d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z">
+                            </path>
+                            <path
+                              d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z">
+                            </path>
+                            <path
+                              d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z">
+                            </path>
+                            <path
+                              d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z">
+                            </path>
+                          </g>
+                        </svg>
+                        Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
+                      </p>
+
+                      <div class="course-card__actions">
+                        <button class="btn btn-outline">Stay Nearby</button>
+                        <button class="btn btn-primary">More Info</button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="course-card">
+                    <div class="course-card__image">
+                      <img src="https://images.pexels.com/photos/12748756/pexels-photo-12748756.png"
+                        alt="ChampionsGate Golf Club coastal view" />
+                    </div>
+
+                    <div class="course-card__body">
+                      <h3>ChampionsGate Golf Club</h3>
+
+                      <p class="course-card__distance">
+                        <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
+                        6 MILES
+                      </p>
+
+                      <div class="course-card__stats">
+                        <span>
+                          <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
+                          YARDS: 7305
+                        </span>
+                        <span>
+                          <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
+                          PAR: 72
+                        </span>
+                      </div>
+
+                      <p class="course-card__quote">
+                        <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
+                        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"
+                          fill="#00967f">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                              .st0 {
+                                fill: none;
+                                stroke: #00967f;
+                                stroke-width: 2;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                              }
+                            </style>
+                            <circle class="st0" cx="16" cy="11" r="8"></circle>
+                            <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path>
+                            <line class="st0" x1="16" y1="29" x2="16" y2="23"></line>
+                            <path
+                              d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z">
+                            </path>
+                            <path
+                              d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z">
+                            </path>
+                            <path
+                              d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z">
+                            </path>
+                            <path
+                              d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z">
+                            </path>
+                            <path
+                              d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z">
+                            </path>
+                          </g>
+                        </svg>
+                        Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
+                      </p>
+
+                      <div class="course-card__actions">
+                        <button class="btn btn-outline">Stay Nearby</button>
+                        <button class="btn btn-primary">More Info</button>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="course-card">
+                    <div class="course-card__image">
+                      <img src="https://images.pexels.com/photos/8218723/pexels-photo-8218723.jpeg"
+                        alt="Nicklaus Course at Reunion Resort" />
+                    </div>
+
+                    <div class="course-card__body">
+                      <h3>Nicklaus Course At Reunion Resort</h3>
+
+                      <p class="course-card__distance">
+                        <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
+                        6 MILES
+                      </p>
+
+                      <div class="course-card__stats">
+                        <span>
+                          <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
+                          YARDS: 7305
+                        </span>
+                        <span>
+                          <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
+                          PAR: 72
+                        </span>
+                      </div>
+
+                      <p class="course-card__quote">
+                        <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
+                        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"
+                          fill="#00967f">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                              .st0 {
+                                fill: none;
+                                stroke: #00967f;
+                                stroke-width: 2;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                              }
+                            </style>
+                            <circle class="st0" cx="16" cy="11" r="8"></circle>
+                            <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path>
+                            <line class="st0" x1="16" y1="29" x2="16" y2="23"></line>
+                            <path
+                              d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z">
+                            </path>
+                            <path
+                              d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z">
+                            </path>
+                            <path
+                              d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z">
+                            </path>
+                            <path
+                              d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z">
+                            </path>
+                            <path
+                              d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z">
+                            </path>
+                          </g>
+                        </svg>
+                        Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
+                      </p>
+
+                      <div class="course-card__actions">
+                        <button class="btn btn-outline">Stay Nearby</button>
+                        <button class="btn btn-primary">More Info</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="other-courses__controls">
+                  <button class="btn btn-outline other-courses__explore">
+                    Explore More Courses
+                  </button>
+
+                  <nav class="carousel-nav" aria-label="Course carousel navigation">
+                    <button class="carousel-nav__btn" aria-label="Previous courses">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </button>
+
+                    <button class="carousel-nav__btn carousel-nav__btn--active" aria-label="Next courses">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </nav>
+                </div>
+              </div>
+            </section>
+            <!-- Other Golf Courses Section Ends Here -->
           </div>
           <!-- LEFT CONTENT END -->
 
-          <!-- Booking Card -->
+          <!-- Right Content - Booking Card -->
           <aside class="booking-card">
             <h2>
               USD $600
@@ -277,867 +1340,6 @@
       </div>
     </section>
     <!-- Course Hero Section Ends Here -->
-
-    <!-- Nearby Stay Section Starts -->
-    <section class="nearby-stay-section">
-      <div class="container">
-        <header class="stay-section-header">
-          <h2>
-            Find the Perfect Stay Near Eagle Creek Golf Club in Orlando, FL
-          </h2>
-
-          <div class="stay-filters" aria-label="Stay filters">
-            <button class="filter-button">
-              Stay Within 10 Miles
-              <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
-            </button>
-
-            <button class="filter-button">
-              Property Type
-              <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
-            </button>
-
-            <button class="filter-button">
-              2 Bedroom
-              <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
-            </button>
-
-            <button class="filter-button">
-              Most Popular
-              <img src="assets/icons/dropdown-arrow.svg" alt="Dropdown Arrow" />
-            </button>
-          </div>
-        </header>
-
-        <div class="stay-content">
-          <!-- Property Cards -->
-          <div class="property-grid">
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort1.jpg" alt="Luxury golf resort near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>Fairway Greens Resort</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort2.jpg" alt="The Par View Lodge near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>The Par View Lodge</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort3.jpg"
-                  alt="Coastal Links Retreat near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>Coastal Links Retreat</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort4.jpg"
-                  alt="Eagle's Nest Golf Resort near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>Eagle's Nest Golf Resort</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort5.jpg"
-                  alt="Parview Lakeside Hotel near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>Parview Lakeside Hotel</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-            <article class="property-card">
-              <div class="property-image">
-                <img src="assets/images/wide-resort6.jpg" alt="Bunker Bay Retreat near Eagle Creek Golf Club Orlando" />
-
-                <span class="course-badge"> 50+ Golf Courses Nearby </span>
-
-                <div class="image-icons">
-                  <img src="assets/icons/leaf.svg" alt="Leaf icon" />
-                  <img src="assets/icons/marker.svg" alt="Marker icon" />
-                  <img src="assets/icons/heart.svg" alt="Heart icon" />
-                </div>
-              </div>
-
-              <div class="property-body">
-                <div class="property-rating">
-                  <img src="assets/icons/circle-star.svg" alt="Rating star icon" />
-                  10.0 Exceptional
-                  <strong class="property-rating-separator">|</strong>
-                  <span class="property-rating-reviews">12 Reviews</span>
-                </div>
-
-                <h3>Bunker Bay Retreat</h3>
-
-                <p class="booking-source">Booking.com</p>
-
-                <strong class="property-price-container">
-                  From $295
-                  <img src="assets/icons/info.svg" alt="Info circle icon" />
-                </strong>
-
-                <p class="property-details">
-                  Shuttle Service To The Course · Golf Club Storage ·
-                  Pet-Friendly · On-Site Dining Options · Sleeps 8
-                </p>
-
-                <p class="property-location">Florida &gt; Orlando</p>
-
-                <div class="property-actions">
-                  <button class="btn btn-outline">Learn More</button>
-
-                  <button class="btn btn-primary">See Dates</button>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Map Area -->
-          <aside class="stay-map">
-            <img src="assets/images/map-eagle-creek.png" alt="Map showing stays near Eagle Creek Golf Club Orlando" />
-
-            <div class="map-price-marker marker-one">$200</div>
-            <div class="map-price-marker marker-two">$100</div>
-            <div class="map-price-marker marker-three">$80</div>
-
-            <div class="map-controls">
-              <button>Map</button>
-              <button>Satellite</button>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-    <!-- Nearby Stay Section Ends -->
-
-    <!-- Club Highlights Section Starts Here -->
-    <section class="club-highlights" aria-labelledby="club-highlights-title">
-      <div class="container">
-        <div class="club-highlights-panel">
-          <h2 id="club-highlights-title" class="club-highlights-title">
-            Eagle Creek Golf Club Highlights
-          </h2>
-
-          <div class="club-highlights-grid">
-            <!-- Card 1 -->
-            <article class="highlight-detail-card">
-              <img class="highlight-detail-card__icon" src="assets/icons/golf-flag.svg" alt="Par and difficulty icon" />
-              <h3>Par and Difficulty</h3>
-              <p>Par 72 (Front 9: Par 36, Back 9: Par 36)</p>
-              <p>Course Rating: 71.4</p>
-              <p>Course Slope: 113</p>
-              <p class="highlight-detail-card__muted">
-                Challenging for experts, enjoyable for intermediates, and
-                welcoming for beginners.
-              </p>
-            </article>
-
-            <!-- Card 2 -->
-            <article class="highlight-detail-card">
-              <img class="highlight-detail-card__icon" src="assets/icons/measuring-tape-tool.svg" alt="Yardage icon" />
-              <h3>Yardage</h3>
-              <p>7,198 yards from the championship tees</p>
-              <h4>Tee Box Options</h4>
-              <ul class="highlight-detail-card__list">
-                <li>Championship: 7,198 yards</li>
-                <li>Regular: 6,720 yards</li>
-                <li>Forward: 5,942 yards</li>
-                <li>Beginner: 5,152 yards</li>
-              </ul>
-            </article>
-
-            <!-- Card 3 -->
-            <article class="highlight-detail-card">
-              <div class="highlight-detail-block">
-                <img class="highlight-detail-card__icon" src="assets/icons/keys.svg" alt="Public course icon" />
-                <h3>Public Course</h3>
-                <p class="highlight-detail-card__muted">No stay required</p>
-              </div>
-
-              <div class="highlight-detail-block">
-                <img class="highlight-detail-card__icon" src="assets/icons/golf-cart.svg" alt="Cart recommended icon" />
-                <h3>Cart Recommended</h3>
-                <p class="highlight-detail-card__muted">Walking allowed</p>
-              </div>
-            </article>
-
-            <!-- Card 4 -->
-            <article class="highlight-detail-card">
-              <img class="highlight-detail-card__icon" src="assets/icons/golf-ball-running.svg"
-                alt="Course style icon" />
-              <h3>Course Style</h3>
-              <p>Parkland</p>
-              <hr class="highlight-detail-card__divider" />
-              <h4>Notable Features</h4>
-              <p class="highlight-detail-card__muted">
-                Tree-lined fairways, undulating greens, and strategically placed
-                bunkers. Water hazards come into play on several holes.
-              </p>
-            </article>
-          </div>
-
-          <ul class="club-features-grid">
-            <li class="club-feature-item">
-              <img src="assets/icons/golf-stick.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>18-Hole Championship Course</h4>
-                <p>Designed for all skill levels with challenging layouts.</p>
-              </div>
-            </li>
-
-            <li class="club-feature-item">
-              <img src="assets/icons/clock-circle.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>Tee Time Flexibility</h4>
-                <p>Convenient booking options to suit your schedule.</p>
-              </div>
-            </li>
-
-            <li class="club-feature-item">
-              <img src="assets/icons/construction-worker.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>Architect and History</h4>
-                <p>
-                  Designed by renowned architect Ron Garl, the course has hosted
-                  regional tournaments.
-                </p>
-              </div>
-            </li>
-
-            <li class="club-feature-item">
-              <img src="assets/icons/building.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>Luxury Clubhouse</h4>
-                <p>Relax with premium dining, locker rooms, and event spaces.</p>
-              </div>
-            </li>
-
-            <li class="club-feature-item">
-              <img src="assets/icons/teach.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>Golf Lessons Available</h4>
-                <p>Expert instruction for players of all levels.</p>
-              </div>
-            </li>
-
-            <li class="club-feature-item">
-              <img src="assets/icons/shopping-bag.svg" alt="" aria-hidden="true" />
-              <div>
-                <h4>Pro Shop</h4>
-                <p>Fully stocked with top-tier gear, apparel, and accessories.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Club Highlights Section Ends Here -->
-
-    <!-- Guest Reviews Section Starts Here -->
-    <section class="guest-reviews" aria-labelledby="guest-reviews-title">
-      <div class="container">
-        <h2 id="guest-reviews-title" class="section-heading">
-          Guest Reviews for Eagle Creek Golf Club
-        </h2>
-
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div class="review-card__meta">
-              <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
-              <div class="review-card__stars" aria-label="5 out of 5 stars">
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-              </div>
-            </div>
-
-            <p class="review-card__text">
-              Eagle Creek challenges your strategy and precision, making it a
-              perfect blend of fun and competitive play.
-            </p>
-
-            <div class="review-card__author">
-              <img class="review-card__avatar" src="assets/images/male-profile1.jpg" alt="profile picture of John Smith" />
-              <span>Golf Pro John Smith</span>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card__meta">
-              <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
-              <div class="review-card__stars" aria-label="4 out of 5 stars">
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-empty.svg" alt="" />
-              </div>
-            </div>
-
-            <p class="review-card__text">
-              Average rating: 4.8/5 stars. Verified golfers praise the course
-              conditions and excellent service.
-            </p>
-
-            <div class="review-card__author">
-              <img class="review-card__avatar" src="assets/images/male-profile2.jpg" alt="profile picture of John Smith" />
-              <span>Golf Pro John Smith</span>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card__meta">
-              <time class="review-card__date" datetime="2025-01-01">JAN 01 2025</time>
-              <div class="review-card__stars" aria-label="4 out of 5 stars">
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-filled.svg" alt="" />
-                <img src="assets/icons/rating-star-empty.svg" alt="" />
-              </div>
-            </div>
-
-            <p class="review-card__text">
-              Lorem ipsum odoconse ctetue adi iscinama monuam adipiscing eleifen
-              hendre himen aeos dictum.
-            </p>
-
-            <div class="review-card__author">
-              <img class="review-card__avatar" src="assets/images/male-profile3.jpg" alt="profile picture of John Smith" />
-              <span>Golf Pro John Smith</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- Guest Reviews Section Ends Here -->
-
-    <!-- Course Features Section Starts Here -->
-    <section class="course-features" aria-labelledby="course-features-title">
-      <div class="container">
-        <h2 id="course-features-title" class="section-heading">
-          Eagle Creek Course Features
-        </h2>
-
-        <div class="course-features-grid">
-          <div class="feature-panel">
-            <h3>Practice Facilities</h3>
-            <ul class="feature-panel__list">
-              <li>Driving range with target greens</li>
-              <li>Putting green</li>
-              <li>Short game area with sand bunkers</li>
-              <li>Professional lessons available</li>
-            </ul>
-          </div>
-
-          <div class="feature-panel feature-panel--wide">
-            <h3>Amenities and Services</h3>
-
-            <div class="feature-subsection">
-              <h4>Caddies and Golf Cart Rentals</h4>
-              <ul class="feature-panel__list">
-                <li>
-                  Availability: Golf carts are equipped with GPS and available
-                  for rental. Caddie services are available upon request.
-                </li>
-                <li>Costs: Cart rentals: $25; Caddie fees: $40/hour.</li>
-              </ul>
-            </div>
-
-            <hr class="feature-subsection__divider" />
-
-            <div class="feature-subsection">
-              <h4>On-Course Food and Beverage</h4>
-              <ul class="feature-panel__list">
-                <li>
-                  Multiple snack bars and a halfway house are conveniently
-                  located. Beverage carts circulate regularly.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Course Features Section Ends Here -->
-
-    <!-- Weather Section Starts Here -->
-    <section class="weather-section" aria-labelledby="weather-title">
-      <div class="container">
-        <h2 id="weather-title" class="section-heading">
-          When is the Best Time of Year to Play at Eagle Creek Golf Club?
-        </h2>
-
-        <p class="weather-section__intro">
-          Fall and Spring are the best seasons to play at Eagle Creek Golf Club.
-          During these months, the weather is mild with minimal rain, providing
-          perfect golfing conditions. Winter is also a great option for those
-          seeking year-round play in Florida's warmer climate.
-        </p>
-
-        <div class="weather-panel">
-          <!-- Forecast strip -->
-          <div class="forecast-strip">
-            <div class="forecast-strip__current">
-              <strong>SUNDAY JAN 19</strong>
-              <span>ORLANDO, FLORIDA</span>
-            </div>
-
-            <ul class="forecast-strip__days">
-              <li class="forecast-day">
-                <span class="forecast-day__label">SUN</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">MON</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">TUE</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">WED</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">THU</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">FRI</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-              <li class="forecast-day">
-                <span class="forecast-day__label">SAT</span>
-                <img src="assets/icons/weather-forecast.svg" alt="Rainy" />
-                <span class="forecast-day__temp">-15.2 °C</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Seasons -->
-          <div class="seasons">
-            <h3 class="seasons__title">Explore Vancouver's Weather Patterns</h3>
-
-            <ul class="seasons-grid">
-              <li class="season-card">
-                <img class="season-card__icon" src="assets/icons/gear.svg" alt="spring icon" />
-                <h4>Spring (March to May)</h4>
-                <p>
-                  Ideal for hiking, with blooming wildflowers and mild
-                  temperatures ranging from 60°F to 80°F. This is the most
-                  popular season, so booking early is recommended.
-                </p>
-                <hr class="season-card__divider" />
-                <div class="season-card__temp">
-                  <h5>Average Temperature</h5>
-                  <p>Daytime: 60°F to 80°F</p>
-                  <p>Nighttime: 40°F to 55°F</p>
-                </div>
-              </li>
-
-              <li class="season-card">
-                <img class="season-card__icon" src="assets/icons/sun.svg" alt="summer icon" />
-                <h4>Summer (June to August)</h4>
-                <p>
-                  Ideal for hiking, with blooming wildflowers and mild
-                  temperatures ranging from 60°F to 80°F. This is the most
-                  popular season, so booking early is recommended.
-                </p>
-                <hr class="season-card__divider" />
-                <div class="season-card__temp">
-                  <h5>Average Temperature</h5>
-                  <p>Daytime: 60°F to 80°F</p>
-                  <p>Nighttime: 40°F to 55°F</p>
-                </div>
-              </li>
-
-              <li class="season-card">
-                <img class="season-card__icon" src="assets/icons/fall.svg" alt="fall icon" />
-                <h4>Fall (September to November)</h4>
-                <p>
-                  Ideal for hiking, with blooming wildflowers and mild
-                  temperatures ranging from 60°F to 80°F. This is the most
-                  popular season, so booking early is recommended.
-                </p>
-                <hr class="season-card__divider" />
-                <div class="season-card__temp">
-                  <h5>Average Temperature</h5>
-                  <p>Daytime: 60°F to 80°F</p>
-                  <p>Nighttime: 40°F to 55°F</p>
-                </div>
-              </li>
-
-              <li class="season-card">
-                <img class="season-card__icon" src="assets/icons/winter.svg" alt="winter icon" />
-                <h4>Winter (December to February)</h4>
-                <p>
-                  Cooler days and crisp evenings make it perfect for exploring
-                  Sedona's trails and enjoying the vibrant autumn colors.
-                </p>
-                <hr class="season-card__divider" />
-                <div class="season-card__temp">
-                  <h5>Average Temperature</h5>
-                  <p>Daytime: 60°F to 80°F</p>
-                  <p>Nighttime: 40°F to 55°F</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Weather Section Ends Here -->
-
-    <!-- Other Golf Courses Section Starts Here -->
-<section class="other-courses" aria-labelledby="other-courses-title">
-  <div class="container">
-    <h2 id="other-courses-title" class="section-heading">
-      Other Golf Courses Near Eagle Creek Golf Club
-    </h2>
-
-    <div class="course-card-grid">
-      <article class="course-card">
-        <div class="course-card__image">
-          <img
-            src="https://images.pexels.com/photos/9736758/pexels-photo-9736758.jpeg"
-            alt="Providence Golf Club at sunset"
-          />
-        </div>
-
-        <div class="course-card__body">
-          <h3>Providence Golf Club</h3>
-
-          <p class="course-card__distance">
-            <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
-            6 MILES
-          </p>
-
-          <div class="course-card__stats">
-            <span>
-              <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
-              YARDS: 7305
-            </span>
-            <span>
-              <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
-              PAR: 72
-            </span>
-          </div>
-
-          <p class="course-card__quote">
-            <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
-             <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#00967f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#00967f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <circle class="st0" cx="16" cy="11" r="8"></circle> <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path> <line class="st0" x1="16" y1="29" x2="16" y2="23"></line> <path d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z"></path> <path d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z"></path> <path d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z"></path> <path d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z"></path> <path d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z"></path> </g></svg>
-            Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
-          </p>
-
-          <div class="course-card__actions">
-            <button class="btn btn-outline">Stay Nearby</button>
-            <button class="btn btn-primary">More Info</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="course-card">
-        <div class="course-card__image">
-          <img
-            src="https://images.pexels.com/photos/12748756/pexels-photo-12748756.png"
-            alt="ChampionsGate Golf Club coastal view"
-          />
-        </div>
-
-        <div class="course-card__body">
-          <h3>ChampionsGate Golf Club</h3>
-
-          <p class="course-card__distance">
-            <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
-            6 MILES
-          </p>
-
-          <div class="course-card__stats">
-            <span>
-              <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
-              YARDS: 7305
-            </span>
-            <span>
-              <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
-              PAR: 72
-            </span>
-          </div>
-
-          <p class="course-card__quote">
-            <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
-             <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#00967f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#00967f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <circle class="st0" cx="16" cy="11" r="8"></circle> <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path> <line class="st0" x1="16" y1="29" x2="16" y2="23"></line> <path d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z"></path> <path d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z"></path> <path d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z"></path> <path d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z"></path> <path d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z"></path> </g></svg>
-            Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
-          </p>
-
-          <div class="course-card__actions">
-            <button class="btn btn-outline">Stay Nearby</button>
-            <button class="btn btn-primary">More Info</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="course-card">
-        <div class="course-card__image">
-          <img
-            src="https://images.pexels.com/photos/8218723/pexels-photo-8218723.jpeg"
-            alt="Nicklaus Course at Reunion Resort"
-          />
-        </div>
-
-        <div class="course-card__body">
-          <h3>Nicklaus Course At Reunion Resort</h3>
-
-          <p class="course-card__distance">
-            <img src="assets/icons/marker.svg" alt="" aria-hidden="true" />
-            6 MILES
-          </p>
-
-          <div class="course-card__stats">
-            <span>
-              <img src="assets/icons/measuring-tape-tool.svg" alt="" aria-hidden="true" />
-              YARDS: 7305
-            </span>
-            <span>
-              <img src="assets/icons/golf-flag.svg" alt="" aria-hidden="true" />
-              PAR: 72
-            </span>
-          </div>
-
-          <p class="course-card__quote">
-            <!-- <img src="assets/icons/quote.svg" alt="" aria-hidden="true" /> -->
-             <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#00967f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#00967f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <circle class="st0" cx="16" cy="11" r="8"></circle> <path class="st0" d="M8.1,20c2.1,1.9,4.9,3,7.9,3s5.8-1.1,7.9-3"></path> <line class="st0" x1="16" y1="29" x2="16" y2="23"></line> <path d="M16.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C15.1,11.5,15,11.7,15,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C17,11.7,16.9,11.5,16.7,11.3z"></path> <path d="M12.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C11.1,11.5,11,11.7,11,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C13,11.7,12.9,11.5,12.7,11.3z"></path> <path d="M14.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C13.1,14.5,13,14.7,13,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C15,14.7,14.9,14.5,14.7,14.3z"></path> <path d="M18.7,14.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C17.1,14.5,17,14.7,17,15 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C19,14.7,18.9,14.5,18.7,14.3z"></path> <path d="M20.7,11.3c0,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.3-0.1-0.7,0-0.9,0.3C19.1,11.5,19,11.7,19,12 c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1s0.2-0.1,0.3-0.2c0.2-0.2,0.3-0.4,0.3-0.7 C21,11.7,20.9,11.5,20.7,11.3z"></path> </g></svg>
-            Phil Mickelson: Notable wins in the AT&amp;T Pebble Beach Pro-Am.
-          </p>
-
-          <div class="course-card__actions">
-            <button class="btn btn-outline">Stay Nearby</button>
-            <button class="btn btn-primary">More Info</button>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="other-courses__controls">
-      <button class="btn btn-outline other-courses__explore">
-        Explore More Courses
-      </button>
-
-      <nav class="carousel-nav" aria-label="Course carousel navigation">
-        <button class="carousel-nav__btn" aria-label="Previous courses">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-
-        <button class="carousel-nav__btn carousel-nav__btn--active" aria-label="Next courses">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </nav>
-    </div>
-  </div>
-</section>
-<!-- Other Golf Courses Section Ends Here -->
   </main>
 
   <footer class="travel-footer">
