@@ -454,7 +454,7 @@ button {
 ========================================== */
 
 .course-section {
-  padding: 25px 0 60px;
+  padding: 25px 0 30px;
 }
 
 /* ==========================================
@@ -691,7 +691,7 @@ button {
 ========================================== */
 
 .course-overview-description {
-  padding: 14px 22px 10px;
+  padding: 14px 2px 2px;
 }
 
 .course-overview-description p {
@@ -1220,7 +1220,7 @@ button {
 ========================================== */
 
 .nearby-stay-section {
-  padding: 70px 0;
+  padding: 0;
   background: #ffffff;
 }
 
@@ -1251,6 +1251,7 @@ button {
   border-radius: var(--radius-pill);
 
   font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
 
   color: var(--text-main);
@@ -1258,6 +1259,13 @@ button {
   cursor: pointer;
 }
 
+.filter-button img {
+
+  width:14px;
+
+  height:14px;
+
+}
 /* Main layout */
 
 .stay-content {
@@ -1339,15 +1347,19 @@ button {
 }
 
 .image-icons img {
-  width: 24px;
+  width: 28px;
 
-  height: 24px;
+  height: 28px;
 
-  background: white;
+  background: rgba(30, 45, 35, 0.089);
 
   padding: 5px;
 
+  border: 1px solid rgba(247, 244, 244, 0.986);
+
   border-radius: 50%;
+
+  filter: brightness(0) invert(1);
 }
 
 /* Card content */
@@ -1357,21 +1369,30 @@ button {
 }
 
 .property-rating {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
   font-size: 12px;
-
+  font-weight: 500;
   color: #4b9655;
-
   margin-bottom: 8px;
 }
 
-.property-rating span {
-  background: #4b9655;
+.property-rating img {
+  width: 18px;
 
-  color: white;
+  height: 18px;
 
-  border-radius: 50%;
+  filter: brightness(0) invert(0.5) sepia(1) saturate(50) hue-rotate(90deg);
+}
 
-  padding: 2px 5px;
+.property-rating-separator {
+  color: #4f504f;
+}
+
+.property-rating-reviews {
+  color: #000000;
 }
 
 .property-body h3 {
@@ -1388,12 +1409,21 @@ button {
   font-size: 13px;
 }
 
-.property-price {
+.property-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
   color: #4a9454;
 
   font-size: 15px;
 
   font-weight: 700;
+}
+
+.property-price-container img {
+  width: 22px;
+  height: 22px;
 }
 
 .property-details {
@@ -1502,30 +1532,138 @@ button {
   font-size: 12px;
 }
 
-/* Responsive */
+/* ==========================================
+   CLUB HIGHLIGHTS SECTION
+========================================== */
 
-@media (max-width: 1100px) {
-  .stay-content {
-    grid-template-columns: 1fr;
-  }
-
-  .stay-map {
-    min-height: 400px;
-  }
-
-  .property-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.club-highlights {
+  padding: 50px 0;
 }
 
-@media (max-width: 700px) {
-  .property-grid {
-    grid-template-columns: 1fr;
-  }
+.club-highlights-panel {
+  background: var(--green-soft);
+  border-radius: var(--radius-md);
+  padding: 40px;
+}
 
-  .stay-section-header h2 {
-    font-size: 25px;
-  }
+.club-highlights-title {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+/* Card grid */
+
+.club-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.highlight-detail-card {
+  background: var(--card-background);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 26px 24px;
+}
+
+.highlight-detail-card__icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 14px;
+}
+
+.highlight-detail-card h3 {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.highlight-detail-card h4 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.highlight-detail-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.highlight-detail-card__muted {
+  margin-top: 10px;
+  color: var(--text-muted);
+}
+
+.highlight-detail-card__list {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.highlight-detail-card__divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 16px 0;
+}
+
+/* Card 3: split into two stacked blocks */
+
+.highlight-detail-card--split {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-detail-block:first-child {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Feature items grid (below cards) */
+
+.club-features-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 32px;
+}
+
+.club-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.club-feature-item img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.club-feature-item h4 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.club-feature-item p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
 }
 
 /* ==========================================================================
@@ -1784,6 +1922,30 @@ button {
     height: 200px;
   }
 
+  /* Nearby stay section */
+
+  .stay-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-map {
+    min-height: 400px;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Club highlights section */
+
+  .club-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .club-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Footer */
 
   .footer-container {
@@ -1858,6 +2020,30 @@ button {
 
   .gallery-side {
     height: 160px;
+  }
+
+  /* Nearby stay section */
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-section-header h2 {
+    font-size: 25px;
+  }
+
+  /* Club highlights section */
+
+  .club-highlights-panel {
+    padding: 24px;
+  }
+
+  .club-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .club-features-grid {
+    grid-template-columns: 1fr;
   }
 
   /* Footer */
