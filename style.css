@@ -223,6 +223,10 @@ button {
 ========================================== */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   background: var(--green-dark);
 
   padding: 18px 0;
@@ -1829,12 +1833,13 @@ button {
 .forecast-strip {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
-  padding: 22px 32px;
+  padding: 22px 36px;
   background: linear-gradient(
     90deg,
-    var(--green-dark) 0%,
-    var(--green-primary) 100%
+    #005e7e 0%,
+    #00967f 100%
   );
   color: var(--white);
 }
@@ -1864,8 +1869,7 @@ button {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 12px;
-  flex: 1;
+  gap: 40px;
 }
 
 .forecast-day {
@@ -1883,8 +1887,9 @@ button {
 }
 
 .forecast-day img {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) saturate(100%) invert(1);
 }
 
 .forecast-day__temp {
@@ -1917,6 +1922,10 @@ button {
   width: 44px;
   height: 44px;
   margin-bottom: 16px;
+  border: 2px solid #00967f;
+  border-radius: 50%;
+  padding: 4px;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%) hue-rotate(125deg) brightness(96%) contrast(102%);
 }
 
 .season-card h4 {
@@ -1999,18 +2008,19 @@ button {
 
 .course-card__distance {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 5px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  color: var(--green-primary);
+  color: #00967f;
   margin-bottom: 12px;
 }
 
 .course-card__distance img {
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%) hue-rotate(125deg) brightness(96%) contrast(102%);
 }
 
 .course-card__stats {
@@ -2033,23 +2043,23 @@ button {
 }
 
 .course-card__stats img {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .course-card__quote {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
   font-size: 12px;
   line-height: 1.5;
-  color: var(--green-primary);
+  color: #00967f;
   margin-bottom: 18px;
 }
 
-.course-card__quote img {
-  width: 14px;
-  height: 14px;
+.course-card__quote svg {
+  width: 28px;
+  height: 28px;
   margin-top: 2px;
   flex-shrink: 0;
 }
