@@ -95,20 +95,27 @@
         display: none;
     }
 
-/* ==========================================
-   STAY & PLAY QUICK PANEL (tablet + mobile only)
-========================================== */
+    /* ==========================================
+    STAY & PLAY QUICK PANEL (tablet + mobile only)
+    ========================================== */
 
     .stay-play-panel {
         display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px;
         border: 1px solid var(--border);
         border-radius: var(--radius-md);
-        padding: 20px;
-        gap: 16px;
-        margin: 18px 0px;
+        margin: 16px 0px;
+        height: 100%;
     }
 
     .stay-play-col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
         flex: 1;
     }
 
@@ -120,9 +127,8 @@
     }
 
     .stay-play-col__header h3 {
-        font-family: var(--font-heading);
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 600;
         letter-spacing: -0.5px;
     }
 
@@ -138,14 +144,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
+        width: 36px;
+        height: 36px;
         border-radius: 50%;
     }
 
     .stay-play-col__icon img {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .stay-play-col__icon--stay {
@@ -156,12 +162,22 @@
         background: radial-gradient(circle, #9ed46b 0%, #7cc24a 100%);
     }
 
+    .stay-play-col__cta--stay-text-mobile {
+        display: none;
+    }
+
+    .stay-play-col__content {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 16px;
+    }
+
     .stay-play-col__box {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid var(--border);
-        border-radius: var(--radius-sm);
+        width: 100%;
         padding: 14px 10px;
         margin-bottom: 14px;
     }
@@ -207,7 +223,6 @@
     .stay-play-col__cta {
         width: 100%;
         height: 46px;
-        border: none;
         border-radius: var(--radius-sm);
         font-size: 13px;
         font-weight: 700;
