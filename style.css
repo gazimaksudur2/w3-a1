@@ -267,12 +267,6 @@ button {
 
   height: 50px;
 
-  border-radius: 50%;
-
-  padding: 4px;
-
-  background: rgba(155, 227, 154, 0.12);
-
   color: var(--green-light);
 }
 
@@ -286,6 +280,40 @@ button {
   align-items: center;
 
   gap: 32px;
+}
+
+.nav-links-desktop {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+}
+
+.hamburger-menu {
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.hamburger-menu svg {
+  width: 28px;
+
+  height: 28px;
 }
 
 .nav-link {
@@ -357,6 +385,10 @@ button {
   letter-spacing: 1px;
 
   transition: var(--transition);
+}
+
+#tee-button img {
+  display: none;
 }
 
 /* ==========================================
@@ -525,11 +557,8 @@ button {
 
 .course-layout {
   display: grid;
-
   grid-template-columns: minmax(0, 1fr) 400px;
-
   gap: 20px;
-
   align-items: start;
 }
 
@@ -1320,6 +1349,7 @@ button {
 
 .nearby-stay-section {
   padding: 0;
+  margin-top: 20px;
   background: #ffffff;
 }
 
@@ -1606,6 +1636,7 @@ button {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
   color: var(--text-main);
   cursor: pointer;
 }
@@ -1634,8 +1665,7 @@ button {
 }
 
 .pagination__page--active {
-  color: var(--green-primary);
-  border-bottom: 2px solid var(--green-primary);
+  color: var(--accent-hover);
 }
 
 .pagination__ellipsis {
@@ -1822,7 +1852,7 @@ button {
   gap: 2px;
 }
 
-.review-card__stars img {
+.review-card__stars svg {
   width: 14px;
   height: 14px;
 }
@@ -1866,7 +1896,11 @@ button {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  align-items: start;
+  align-items: stretch;
+  height: 100%;
+}
+.course-features-grid > * {
+  height: 100%;
 }
 
 .feature-panel {
@@ -2447,258 +2481,3 @@ button {
 /* ==========================================================================
    RESPONSIVE
 ========================================================================== */
-
-/* ==========================================
-   TABLET + SMALL LAPTOP
-========================================== */
-
-@media (max-width: 1100px) {
-  /* Course section */
-
-  .course-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .course-overview-bar {
-    flex-wrap: wrap;
-
-    gap: 20px;
-  }
-
-  .gallery {
-    height: auto;
-
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-side {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    height: 200px;
-  }
-
-  .stay-play-panel {
-    display: flex;
-  }
-
-  /* Nearby stay section */
-
-  .stay-content {
-    grid-template-columns: 1fr;
-  }
-
-  .stay-map {
-    min-height: 400px;
-  }
-
-  .property-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Club highlights section */
-
-  .club-highlights-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .club-features-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .course-features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .seasons-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .forecast-strip {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .course-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  /* Footer */
-
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .footer-right {
-    width: 100%;
-  }
-
-  .footer-links {
-    grid-template-columns: repeat(2, 150px);
-  }
-}
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width: 700px) {
-  /* Footer background */
-
-  .travel-footer {
-    background-image: var(--footer-bg-mobile);
-
-    background-position: center;
-  }
-
-  /* Header */
-
-  .nav-container {
-    flex-direction: column;
-
-    gap: 20px;
-  }
-
-  .nav-menu {
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 24px;
-  }
-
-  /* Course */
-
-  .course-header h1 {
-    font-size: 26px;
-  }
-
-  .course-meta {
-    flex-wrap: wrap;
-  }
-
-  .course-overview-bar {
-    flex-direction: column;
-
-    align-items: flex-start;
-  }
-
-  .course-highlight {
-    width: 100%;
-  }
-
-  .highlight-button {
-    width: 100%;
-  }
-
-  .gallery-side {
-    height: 160px;
-  }
-
-  .stay-play-panel {
-    flex-direction: column;
-  }
-  
-  .stay-play-col__box--triple {
-    flex-wrap: wrap;
-  }
-
-  .stay-controls {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  /* Nearby stay section */
-
-  .property-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stay-section-header h2 {
-    font-size: 25px;
-  }
-
-  /* Club highlights section */
-
-  .club-highlights-panel {
-    padding: 24px;
-  }
-
-  .club-highlights-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .club-features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .feature-panel {
-    padding: 20px;
-  }
-
-  .forecast-strip {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .forecast-strip__current {
-    border-right: none;
-    padding-right: 0;
-  }
-  
-  .forecast-strip__days {
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-  }
-  
-  .seasons-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .course-card-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .other-courses__controls {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  /* Footer */
-
-  .footer-links {
-    grid-template-columns: 1fr;
-  }
-
-  .selectors {
-    flex-direction: column;
-  }
-
-  .select-box {
-    width: 100%;
-  }
-
-  .brand-area {
-    flex-direction: column;
-
-    align-items: flex-start;
-  }
-}
-
-/* ==========================================
-   EXTRA SMALL MOBILE
-========================================== */
-
-@media (max-width: 480px) {
-  .gallery-side {
-    display: none;
-  }
-
-  .course-meta {
-    gap: 6px;
-  }
-}

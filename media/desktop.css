@@ -1,0 +1,65 @@
+/* ==========================================
+   DESKTOP
+========================================== */
+
+
+@media (max-width: 1240px) {
+
+    .site-header {
+        padding: 12px 0;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    .logo-icon {
+        width: 40px;
+
+        height: 40px;
+    }
+
+    .nav-menu {
+        gap: 24px;
+    }
+
+    .nav-links-desktop {
+        gap: 24px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    /* ==========================================
+     BUTTONS
+  ========================================== */
+
+    .btn {
+        height: 38px;
+
+        padding: 0 20px;
+
+        font-family: var(--font-heading);
+
+        font-size: 12px;
+    }
+
+    /* ==========================================
+     NAV SEARCH
+  ========================================== */
+
+    .nav-search {
+        height: 38px;
+        width: 180px;
+    }
+
+    .course-layout {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 8px;
+    }
+}

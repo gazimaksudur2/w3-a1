@@ -1,0 +1,133 @@
+/* ==========================================
+   TABLET + SMALL LAPTOP
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .site-header {
+        padding: 16px 0;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu {
+        gap: 24px;
+    }
+
+    .nav-links-desktop {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 12px;
+
+    }
+
+    .btn {
+        height: 38px;
+
+        padding: 0 20px;
+    }
+
+    .nav-search {
+        height: 38px;
+
+        width: 180px;
+    }
+
+    /* Course section */
+
+    .course-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .course-overview-bar {
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .gallery {
+        height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-side {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        height: 200px;
+    }
+
+    .stay-play-panel {
+        display: flex;
+    }
+
+    /* Nearby stay section */
+
+    .stay-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stay-map {
+        min-height: 400px;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Club highlights section */
+
+    .club-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .club-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forecast-strip {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .course-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 150px);
+    }
+}
