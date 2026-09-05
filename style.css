@@ -1161,51 +1161,31 @@ button {
   padding: 4px;
 }
 
-
-
-.price-row {
-
+.price-row-night, .price-row-total {
+  
   display:flex;
 
   justify-content:space-between;
 
-  padding:12px 8px;
-
-  font-size:12px;
-
-}
-
-
-
-.price-row span {
-
   color:#68736c;
 
+  font-size: 10px;
+
+  padding:8px 4px;
+
 }
 
+.price-row-total {
 
-
-.price-row strong {
-
+  font-weight: 600;
+  font-size: 16px;
   color:var(--text-dark);
 
 }
 
-
-
-.price-row.total {
+.price-row-total {
 
   border-top:1px solid #eeeeee;
-
-}
-
-
-
-.price-row.total span {
-
-  font-size:14px;
-
-  color:#68736c;
 
 }
 
@@ -1216,8 +1196,6 @@ button {
   justify-content: center;
   gap: 8px;
 }
-
-
 
 /* Button */
 
@@ -1245,7 +1223,9 @@ button {
 
 }
 
-
+.check-button:hover {
+  background:#59aeb9;
+}
 
 /* Booking redirect */
 
@@ -1261,7 +1241,13 @@ button {
 
 }
 
-
+.booking-redirect img {
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover {
+    opacity: 0.8;
+  }
+}
 
 .booking-redirect strong {
 
