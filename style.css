@@ -1653,6 +1653,21 @@ button {
   margin-bottom: 18px;
 }
 
+.club-features-grid {
+  position: relative;
+}
+
+.club-features-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: var(--border);
+  pointer-events: none;
+}
+
 /* Feature items grid (below cards) */
 
 .club-features-grid {
@@ -1703,12 +1718,39 @@ button {
 }
 
 /* ==========================================
-   GUEST REVIEWS SECTION
+   SPECIAL PACKAGES CALLOUT
 ========================================== */
 
-.guest-reviews {
-  padding: 50px 0 20px;
+.special-packages {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
 }
+
+.special-packages h3 {
+  width: 200px;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+.special-packages p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   GUEST REVIEWS SECTION
+========================================== */
 
 .reviews-grid {
   display: grid;
