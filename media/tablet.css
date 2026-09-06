@@ -308,22 +308,17 @@
         gap: 10px;
     }
 
-    .course-features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .seasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .forecast-strip {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+    .course-features {
+        padding: 20px 0 20px;
+      }
 
     .course-card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .weather-section {
+        padding: 16px 0 16px;
+      }
 
     /* Footer */
 

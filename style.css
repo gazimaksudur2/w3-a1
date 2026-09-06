@@ -1821,7 +1821,7 @@ button {
 ========================================== */
 
 .course-features {
-  padding: 30px 0 60px;
+  padding: 30px 0 30px;
 }
 
 .course-features-grid {
@@ -1839,6 +1839,7 @@ button {
   background: var(--green-soft);
   border-radius: var(--radius-md);
   padding: 26px 28px;
+  border: 1px solid var(--border);
 }
 
 .feature-panel h3 {
@@ -1884,7 +1885,7 @@ button {
 ========================================== */
 
 .weather-section {
-  padding: 30px 0 60px;
+  padding: 20px 0 40px;
 }
 
 .weather-section__intro {
@@ -1915,6 +1916,10 @@ button {
     var(--teal-accent) 100%
   );
   color: var(--white);
+}
+
+.forecast-current-mobile {
+  display: none;
 }
 
 .forecast-strip__current {
