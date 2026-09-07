@@ -63,8 +63,8 @@
 
   --font-body:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  
-    /* MOTION */
+
+  /* MOTION */
 
   --transition: 0.3s ease;
 
@@ -75,7 +75,7 @@
   --radius-md: 12px;
 
   --radius-pill: 30px;
-  
+
   /* FOOTER bg-image */
 
   --footer-bg-desktop: url("assets/images/footer-wide-beach1.jpg");
@@ -83,7 +83,7 @@
   --footer-bg-mobile: url("assets/images/footer-long-beach1.jpg");
 }
 
-  /* RESET */
+/* RESET */
 
 *,
 *::before,
@@ -111,6 +111,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.course-main-content {
+  min-width: 0;
+}
+
+.club-highlights {
+  min-width: 0;
+}
+
+.club-highlights-panel {
+  min-width: 0;
+}
+
 img {
   max-width: 100%;
 
@@ -127,7 +145,7 @@ button {
   font-family: inherit;
 }
 
-  /* GLOBAL COMPONENTS */
+/* GLOBAL COMPONENTS */
 
 .container {
   width: 100%;
@@ -167,7 +185,7 @@ button {
   background: var(--green-soft);
 }
 
-  /* HEADER */
+/* HEADER */
 
 .site-header {
   position: sticky;
@@ -189,7 +207,7 @@ button {
   justify-content: space-between;
 }
 
-  /* LOGO */
+/* LOGO */
 
 .logo {
   font-family: var(--font-heading);
@@ -229,7 +247,7 @@ button {
   color: var(--green-light);
 }
 
-  /* NAVIGATION */
+/* NAVIGATION */
 
 .nav-menu {
   display: flex;
@@ -314,7 +332,7 @@ button {
   background: var(--green-light);
 }
 
-  /* BUTTONS */
+/* BUTTONS */
 
 .btn {
   display: inline-flex;
@@ -346,7 +364,7 @@ button {
   display: none;
 }
 
-  /* NAV SEARCH */
+/* NAV SEARCH */
 
 .nav-search {
   height: 42px;
@@ -412,13 +430,13 @@ button {
   color: var(--white);
 }
 
-  /* COURSE HERO */
+/* COURSE HERO */
 
 .course-section {
   padding: 25px 0 30px;
 }
 
-  /* BREADCRUMB */
+/* BREADCRUMB */
 
 .breadcrumb {
   font-size: 12px;
@@ -432,7 +450,7 @@ button {
   margin: 0 8px;
 }
 
-  /* COURSE TITLE */
+/* COURSE TITLE */
 
 .course-header h1 {
   font-family: var(--font-heading);
@@ -448,7 +466,7 @@ button {
   margin-bottom: 10px;
 }
 
-  /* COURSE META */
+/* COURSE META */
 
 .course-meta {
   display: flex;
@@ -496,7 +514,7 @@ button {
   margin: 0;
 }
 
-  /* MAIN GRID */
+/* MAIN GRID */
 
 .course-layout {
   display: grid;
@@ -513,7 +531,7 @@ button {
   gap: 4px;
 }
 
-  /* IMAGE GALLERY */
+/* IMAGE GALLERY */
 
 .gallery {
   display: grid;
@@ -573,7 +591,7 @@ button {
   min-height: 0;
 }
 
-  /* GALLERY LAST IMAGE BUTTON */
+/* GALLERY LAST IMAGE BUTTON */
 
 .gallery-item--last {
   position: relative;
@@ -627,7 +645,7 @@ button {
   display: none;
 }
 
-  /* COURSE OVERVIEW BAR */
+/* COURSE OVERVIEW BAR */
 
 .course-overview-description {
   padding: 14px 2px 2px;
@@ -774,7 +792,7 @@ button {
   background: var(--green-soft);
 }
 
-  /* BOOKING CARD */
+/* BOOKING CARD */
 
 .booking-card {
   position: sticky;
@@ -1078,7 +1096,7 @@ button {
   text-decoration: underline;
 }
 
-  /* NEARBY STAY SECTION */
+/* NEARBY STAY SECTION */
 
 .nearby-stay-section {
   padding: 0;
@@ -1140,7 +1158,8 @@ button {
   align-items: start;
 }
 
-.stay-carousel-wrapper, .review-carousel-wrapper {
+.stay-carousel-wrapper,
+.review-carousel-wrapper {
   display: none;
 }
 
@@ -1336,7 +1355,7 @@ button {
   border: 1px solid var(--border);
 }
 
-  /* PAGINATION */
+/* PAGINATION */
 .stay-controls {
   display: flex;
   align-items: center;
@@ -1406,7 +1425,7 @@ button {
   color: var(--text-muted);
 }
 
-  /* CLUB HIGHLIGHTS SECTION */
+/* CLUB HIGHLIGHTS SECTION */
 
 .club-highlights {
   padding: 50px 0;
@@ -1546,7 +1565,7 @@ button {
   color: var(--text-muted);
 }
 
-  /* SHARED SECTION HEADING */
+/* SHARED SECTION HEADING */
 
 .section-heading {
   font-family: var(--font-heading);
@@ -1556,7 +1575,7 @@ button {
   margin-bottom: 20px;
 }
 
-  /* SPECIAL PACKAGES CALLOUT */
+/* SPECIAL PACKAGES CALLOUT */
 
 .special-packages {
   text-align: left;
@@ -1585,7 +1604,7 @@ button {
   color: var(--text-muted);
 }
 
-  /* GUEST REVIEWS SECTION */
+/* GUEST REVIEWS SECTION */
 
 .reviews-grid {
   display: grid;
@@ -1651,7 +1670,7 @@ button {
   color: var(--text-main);
 }
 
-  /* COURSE FEATURES SECTION */
+/* COURSE FEATURES SECTION */
 
 .course-features {
   padding: 30px 0 30px;
@@ -1713,7 +1732,7 @@ button {
   margin: 18px 0;
 }
 
-  /* WEATHER SECTION */
+/* WEATHER SECTION */
 
 .weather-section {
   padding: 20px 0 40px;
@@ -1872,7 +1891,7 @@ button {
   line-height: 1.5;
 }
 
-  /* OTHER GOLF COURSES SECTION */
+/* OTHER GOLF COURSES SECTION */
 
 .other-courses {
   padding: 30px 0 60px;
@@ -2028,7 +2047,7 @@ button {
   background: var(--green-soft);
 }
 
-  /* FOOTER */
+/* FOOTER */
 
 .travel-footer {
   position: relative;
@@ -2243,7 +2262,7 @@ button {
   color: var(--footer-text);
 }
 
-  /* DESKTOP */
+/* DESKTOP */
 
 @media (max-width: 1570px) {
   .property-grid {
@@ -2289,7 +2308,7 @@ button {
   .nav-link {
     font-size: 12px;
   }
-  
+
   /* BUTTONS */
 
   .btn {
@@ -2301,7 +2320,7 @@ button {
 
     font-size: 12px;
   }
-  
+
   /* NAV SEARCH */
 
   .nav-search {
@@ -2315,7 +2334,7 @@ button {
   }
 }
 
-  /* TABLET + SMALL LAPTOP */
+/* TABLET + SMALL LAPTOP */
 
 @media (max-width: 1170px) {
   .container {
@@ -2736,10 +2755,9 @@ button {
   }
 }
 
-  /* MOBILE */
+/* MOBILE */
 
 @media (max-width: 650px) {
-
   .container {
     padding-inline: 10px;
   }
@@ -2911,6 +2929,19 @@ button {
 
   /* Nearby stay section */
 
+  .stay-filters {
+    flex-wrap: nowrap;
+  }
+
+ .filter-button {
+  gap: 4px;
+  min-width: 104px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  font-size: 8px;
+  font-weight: 500;
+}
+
   .property-grid {
     grid-template-columns: 1fr;
   }
@@ -2933,20 +2964,27 @@ button {
     gap: 18px;
   }
 
-  .stay-carousel-wrapper, .review-carousel-wrapper {
+  .stay-carousel-wrapper,
+  .review-carousel-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
 
-  .stay-carousel-filled, .review-carousel-filled {
+  .review-carousel-wrapper {
+    padding-top: 10px;
+  }
+
+  .stay-carousel-filled,
+  .review-carousel-filled {
     width: 16px;
     height: 16px;
     background-color: var(--accent);
     border-radius: 50%;
   }
-  .stay-carousel-blank, .review-carousel-blank {
+  .stay-carousel-blank,
+  .review-carousel-blank {
     width: 16px;
     height: 16px;
     border: 2px solid var(--border);
@@ -2964,7 +3002,45 @@ button {
   }
 
   .club-highlights-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: unset;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 18px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: auto;
+    scrollbar-color: var(--accent) var(--border);
+  }
+
+  .club-highlights-grid::-webkit-scrollbar {
+    height: 14px;
+    display: block;
+  }
+
+  .club-highlights-grid::-webkit-scrollbar-track {
+    background: var(--border);
+    border-radius: 10px;
+  }
+
+  .club-highlights-grid::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+    border: 3px solid var(--border);
+  }
+
+  .club-highlights-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-hover);
+  }
+
+  .highlight-detail-card {
+    flex: 0 0 260px;
+    min-width: 0;
+    scroll-snap-align: start;
   }
 
   .club-features-grid {
@@ -3046,6 +3122,12 @@ button {
     gap: 20px;
   }
 
+  .reviews-grid > *:not(:first-child),
+  .seasons-grid > *:not(:first-child),
+  .property-grid > *:not(:first-child) {
+    display: none;
+  }
+
   .seasons-grid {
     grid-template-columns: 1fr;
   }
@@ -3118,7 +3200,7 @@ button {
   }
 }
 
-  /* EXTRA SMALL MOBILE */
+/* EXTRA SMALL MOBILE */
 
 @media (max-width: 500px) {
   .club-features-grid {
