@@ -1,44 +1,27 @@
 :root {
-  /* =====================================
-     BRAND COLORS
-  ===================================== */
+  /* BRAND COLORS */
 
-  /* Header / Footer background */
   --green-dark: #1f3326;
 
-  /* Main brand green */
   --green-primary: #2e6b3e;
 
-  /* CTA / highlight green */
   --green-light: #8ed081;
 
-  /* Soft green sections */
   --green-soft: #eaf4ea;
 
-  /* Footer highlight */
   --lime: #c3cf7a;
 
-  /* =====================================
-     TEXT COLORS
-  ===================================== */
-
-  /* Main headings */
+  /* TEXT COLORS */
   --text-dark: #1d2b22;
 
-  /* Main body text */
   --text-main: #26352b;
 
-  /* Muted descriptions */
   --text-muted: #69756d;
 
-  /* White text */
   --white: #ffffff;
 
-  /* =====================================
-     BUTTON / ACCENT COLORS
-  ===================================== */
+  /* BUTTON / ACCENT COLORS */
 
-  /* Keep old names so existing CSS works */
   --accent: #8ed081;
 
   --accent-hover: #72c46b;
@@ -49,17 +32,13 @@
 
   --blue-accent: #4db8d6;
 
-  /* =====================================
-     UI COLORS
-  ===================================== */
+  /* UI COLORS  */
 
   --border: #d9e4da;
 
   --card-background: #ffffff;
 
-  /* =====================================
-     FOOTER
-  ===================================== */
+  /* FOOTER */
 
   --footer-overlay: rgba(20, 40, 28, 0.88);
 
@@ -67,58 +46,44 @@
 
   --footer-text: #d2daa0;
 
-  /* =====================================
-     EFFECTS
-  ===================================== */
+  /* EFFECTS */
 
   --shadow-card: 0 10px 30px rgba(31, 51, 38, 0.08);
 
   --shadow-button: 0 6px 18px rgba(46, 107, 62, 0.2);
 
-  /* =====================================
-     LAYOUT
-  ===================================== */
+  /* LAYOUT */
 
   --container-width: 1800px;
 
-  /* =====================================
-     TYPOGRAPHY
-  ===================================== */
+  /* TYPOGRAPHY */
 
   --font-heading:
     "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --font-body:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-  /* =====================================
-     MOTION
-  ===================================== */
+  
+    /* MOTION */
 
   --transition: 0.3s ease;
 
-  /* =====================================
-     RADIUS
-  ===================================== */
+  /* RADIUS */
 
   --radius-sm: 6px;
 
   --radius-md: 12px;
 
   --radius-pill: 30px;
-
-  /* =====================================
-     FOOTER bg-image
-  ===================================== */
+  
+  /* FOOTER bg-image */
 
   --footer-bg-desktop: url("assets/images/footer-wide-beach1.jpg");
 
   --footer-bg-mobile: url("assets/images/footer-long-beach1.jpg");
 }
 
-/* ==========================================================================
-   RESET
-========================================================================== */
+  /* RESET */
 
 *,
 *::before,
@@ -162,9 +127,7 @@ button {
   font-family: inherit;
 }
 
-/* ==========================================================================
-   GLOBAL COMPONENTS
-========================================================================== */
+  /* GLOBAL COMPONENTS */
 
 .container {
   width: 100%;
@@ -204,9 +167,7 @@ button {
   background: var(--green-soft);
 }
 
-/* ==========================================
-   HEADER
-========================================== */
+  /* HEADER */
 
 .site-header {
   position: sticky;
@@ -228,9 +189,7 @@ button {
   justify-content: space-between;
 }
 
-/* ==========================================
-   LOGO
-========================================== */
+  /* LOGO */
 
 .logo {
   font-family: var(--font-heading);
@@ -270,9 +229,7 @@ button {
   color: var(--green-light);
 }
 
-/* ==========================================
-   NAVIGATION
-========================================== */
+  /* NAVIGATION */
 
 .nav-menu {
   display: flex;
@@ -357,9 +314,7 @@ button {
   background: var(--green-light);
 }
 
-/* ==========================================
-   BUTTONS
-========================================== */
+  /* BUTTONS */
 
 .btn {
   display: inline-flex;
@@ -391,9 +346,7 @@ button {
   display: none;
 }
 
-/* ==========================================
-   NAV SEARCH
-========================================== */
+  /* NAV SEARCH */
 
 .nav-search {
   height: 42px;
@@ -459,17 +412,13 @@ button {
   color: var(--white);
 }
 
-/* ==========================================
-   COURSE HERO
-========================================== */
+  /* COURSE HERO */
 
 .course-section {
   padding: 25px 0 30px;
 }
 
-/* ==========================================
-   BREADCRUMB
-========================================== */
+  /* BREADCRUMB */
 
 .breadcrumb {
   font-size: 12px;
@@ -483,9 +432,7 @@ button {
   margin: 0 8px;
 }
 
-/* ==========================================
-   COURSE TITLE
-========================================== */
+  /* COURSE TITLE */
 
 .course-header h1 {
   font-family: var(--font-heading);
@@ -501,9 +448,7 @@ button {
   margin-bottom: 10px;
 }
 
-/* ==========================================
-   COURSE META
-========================================== */
+  /* COURSE META */
 
 .course-meta {
   display: flex;
@@ -551,9 +496,7 @@ button {
   margin: 0;
 }
 
-/* ==========================================
-   MAIN GRID
-========================================== */
+  /* MAIN GRID */
 
 .course-layout {
   display: grid;
@@ -570,9 +513,7 @@ button {
   gap: 4px;
 }
 
-/* ==========================================
-   IMAGE GALLERY
-========================================== */
+  /* IMAGE GALLERY */
 
 .gallery {
   display: grid;
@@ -632,9 +573,7 @@ button {
   min-height: 0;
 }
 
-/* ==========================================
-   GALLERY LAST IMAGE BUTTON
-========================================== */
+  /* GALLERY LAST IMAGE BUTTON */
 
 .gallery-item--last {
   position: relative;
@@ -688,9 +627,7 @@ button {
   display: none;
 }
 
-/* ==========================================
-   COURSE OVERVIEW BAR
-========================================== */
+  /* COURSE OVERVIEW BAR */
 
 .course-overview-description {
   padding: 14px 2px 2px;
@@ -837,9 +774,7 @@ button {
   background: var(--green-soft);
 }
 
-/* ==========================================
-   BOOKING CARD
-========================================== */
+  /* BOOKING CARD */
 
 .booking-card {
   position: sticky;
@@ -1143,9 +1078,7 @@ button {
   text-decoration: underline;
 }
 
-/* ==========================================
-   NEARBY STAY SECTION
-========================================== */
+  /* NEARBY STAY SECTION */
 
 .nearby-stay-section {
   padding: 0;
@@ -1207,7 +1140,7 @@ button {
   align-items: start;
 }
 
-.stay-carousel-wrapper {
+.stay-carousel-wrapper, .review-carousel-wrapper {
   display: none;
 }
 
@@ -1403,9 +1336,7 @@ button {
   border: 1px solid var(--border);
 }
 
-/* ==========================================
-   PAGINATION
-========================================== */
+  /* PAGINATION */
 .stay-controls {
   display: flex;
   align-items: center;
@@ -1475,9 +1406,7 @@ button {
   color: var(--text-muted);
 }
 
-/* ==========================================
-   CLUB HIGHLIGHTS SECTION
-========================================== */
+  /* CLUB HIGHLIGHTS SECTION */
 
 .club-highlights {
   padding: 50px 0;
@@ -1617,9 +1546,7 @@ button {
   color: var(--text-muted);
 }
 
-/* ==========================================
-   SHARED SECTION HEADING
-========================================== */
+  /* SHARED SECTION HEADING */
 
 .section-heading {
   font-family: var(--font-heading);
@@ -1629,9 +1556,7 @@ button {
   margin-bottom: 20px;
 }
 
-/* ==========================================
-   SPECIAL PACKAGES CALLOUT
-========================================== */
+  /* SPECIAL PACKAGES CALLOUT */
 
 .special-packages {
   text-align: left;
@@ -1660,9 +1585,7 @@ button {
   color: var(--text-muted);
 }
 
-/* ==========================================
-   GUEST REVIEWS SECTION
-========================================== */
+  /* GUEST REVIEWS SECTION */
 
 .reviews-grid {
   display: grid;
@@ -1728,9 +1651,7 @@ button {
   color: var(--text-main);
 }
 
-/* ==========================================
-   COURSE FEATURES SECTION
-========================================== */
+  /* COURSE FEATURES SECTION */
 
 .course-features {
   padding: 30px 0 30px;
@@ -1792,9 +1713,7 @@ button {
   margin: 18px 0;
 }
 
-/* ==========================================
-   WEATHER SECTION
-========================================== */
+  /* WEATHER SECTION */
 
 .weather-section {
   padding: 20px 0 40px;
@@ -1953,9 +1872,7 @@ button {
   line-height: 1.5;
 }
 
-/* ==========================================
-   OTHER GOLF COURSES SECTION
-========================================== */
+  /* OTHER GOLF COURSES SECTION */
 
 .other-courses {
   padding: 30px 0 60px;
@@ -2111,9 +2028,7 @@ button {
   background: var(--green-soft);
 }
 
-/* ==========================================================================
-   FOOTER
-========================================================================== */
+  /* FOOTER */
 
 .travel-footer {
   position: relative;
@@ -2328,9 +2243,7 @@ button {
   color: var(--footer-text);
 }
 
-/* ==========================================
-   DESKTOP
-========================================== */
+  /* DESKTOP */
 
 @media (max-width: 1570px) {
   .property-grid {
@@ -2376,10 +2289,8 @@ button {
   .nav-link {
     font-size: 12px;
   }
-
-  /* ==========================================
-     BUTTONS
-  ========================================== */
+  
+  /* BUTTONS */
 
   .btn {
     height: 38px;
@@ -2390,10 +2301,8 @@ button {
 
     font-size: 12px;
   }
-
-  /* ==========================================
-     NAV SEARCH
-  ========================================== */
+  
+  /* NAV SEARCH */
 
   .nav-search {
     height: 38px;
@@ -2406,9 +2315,7 @@ button {
   }
 }
 
-/* ==========================================
-   TABLET + SMALL LAPTOP
-========================================== */
+  /* TABLET + SMALL LAPTOP */
 
 @media (max-width: 1170px) {
   .container {
@@ -2525,9 +2432,7 @@ button {
     display: none;
   }
 
-  /* ==========================================
-    STAY & PLAY QUICK PANEL (tablet + mobile only)
-    ========================================== */
+  /* STAY & PLAY QUICK PANEL (tablet + mobile only) */
 
   .stay-play-panel {
     display: flex;
@@ -2831,14 +2736,9 @@ button {
   }
 }
 
-/* ==========================================
-   MOBILE
-========================================== */
+  /* MOBILE */
 
 @media (max-width: 650px) {
-  /* ==========================================
-   HEADER
-========================================== */
 
   .container {
     padding-inline: 10px;
@@ -3033,20 +2933,20 @@ button {
     gap: 18px;
   }
 
-  .stay-carousel-wrapper {
+  .stay-carousel-wrapper, .review-carousel-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
 
-  .stay-carousel-filled {
+  .stay-carousel-filled, .review-carousel-filled {
     width: 16px;
     height: 16px;
     background-color: var(--accent);
     border-radius: 50%;
   }
-  .stay-carousel-blank {
+  .stay-carousel-blank, .review-carousel-blank {
     width: 16px;
     height: 16px;
     border: 2px solid var(--border);
@@ -3158,7 +3058,7 @@ button {
   }
 
   .seasons-carousel {
-    height: 4px;
+    height: 6px;
     padding: 22px 0px 0px;
     display: flex;
     align-items: center;
@@ -3169,7 +3069,7 @@ button {
   .seasons-carousel div {
     width: 32px;
     height: 4px;
-    border-radius: 2px;
+    border-radius: 3px;
   }
 
   .seasons-carousel-filled {
@@ -3218,9 +3118,7 @@ button {
   }
 }
 
-/* ==========================================
-     EXTRA SMALL MOBILE
-  ========================================== */
+  /* EXTRA SMALL MOBILE */
 
 @media (max-width: 500px) {
   .club-features-grid {
