@@ -3199,17 +3199,17 @@ button {
 
     background-position: center;
   }
+
+  .reviews-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
 }
 
 /* EXTRA SMALL MOBILE */
 
 @media (max-width: 500px) {
   .club-features-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
-  }
-
-  .reviews-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
