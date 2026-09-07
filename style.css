@@ -603,8 +603,7 @@ button {
 }
 
 .gallery-item {
-
-  position:relative;
+  position: relative;
 
   min-height: 0;
 }
@@ -620,15 +619,13 @@ button {
 }
 
 .gallery-side {
+  display: grid;
 
-  display:grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 
-  grid-template-rows:repeat(2, minmax(0, 1fr));
+  gap: 3px;
 
-  gap:3px;
-
-  min-height:0;
-
+  min-height: 0;
 }
 
 .gallery-side img {
@@ -640,63 +637,51 @@ button {
 ========================================== */
 
 .gallery-item--last {
-
   position: relative;
 
   overflow: hidden;
-
 }
 
-
 .gallery-item--last img {
+  width: 100%;
 
-  width:100%;
+  height: 100%;
 
-  height:100%;
-
-  object-fit:cover;
-
+  object-fit: cover;
 }
 
 .gallery-view-button {
+  position: absolute;
 
-  position:absolute;
+  right: 14px;
 
-  right:14px;
+  bottom: 14px;
 
-  bottom:14px;
+  z-index: 5;
 
-  z-index:5;
+  background: rgba(0, 0, 0, 0.25);
 
+  backdrop-filter: blur(2px);
 
-  background:rgba(0,0,0,0.25);
+  border: 1px solid white;
 
-  backdrop-filter:blur(2px);
+  color: white;
 
+  padding: 8px 18px;
 
-  border:1px solid white;
+  border-radius: 30px;
 
-  color:white;
+  font-family: var(--font-heading);
 
+  font-size: 11px;
 
-  padding:8px 18px;
+  font-weight: 600;
 
-  border-radius:30px;
+  text-transform: uppercase;
 
+  letter-spacing: 0.5px;
 
-  font-family:var(--font-heading);
-
-  font-size:11px;
-
-  font-weight:600;
-
-  text-transform:uppercase;
-
-  letter-spacing:.5px;
-
-
-  cursor:pointer;
-
+  cursor: pointer;
 }
 
 .stay-play-panel {
@@ -741,7 +726,7 @@ button {
   height: 16px;
   display: inline-block;
   position: absolute;
-  bottom: -2px;  
+  bottom: -2px;
 }
 
 .read-more-link {
@@ -861,235 +846,186 @@ button {
   top: 100px;
   z-index: 10;
 
-  background:white;
+  background: white;
 
-  border:1px solid var(--border);
+  border: 1px solid var(--border);
 
-  border-radius:8px;
+  border-radius: 8px;
 
-  padding:18px;
+  padding: 18px;
 
-  box-shadow:0 5px 20px rgba(0,0,0,.08);
-
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
-
-
 
 .booking-card h2 {
+  display: flex;
 
-  display:flex;
+  align-items: baseline;
 
-  align-items:baseline;
+  gap: 6px;
 
-  gap:6px;
+  margin-bottom: 16px;
 
-  margin-bottom:16px;
+  color: var(--text-dark);
 
-  color:var(--text-dark);
-
-  font-size:20px;
-
+  font-size: 20px;
 }
-
-
 
 .booking-card h2 small {
+  font-size: 11px;
 
-  font-size:11px;
+  color: var(--text-muted);
 
-  color:var(--text-muted);
-
-  font-weight:500;
-
+  font-weight: 500;
 }
-
-
 
 /* Date fields */
 
 .date-row {
+  display: grid;
 
-  display:grid;
+  grid-template-columns: 1fr 1fr;
 
-  grid-template-columns:1fr 1fr;
-
-  gap:6px;
-
+  gap: 6px;
 }
-
-
 
 .date-field {
+  position: relative;
 
-  position:relative;
+  height: 46px;
 
-  height:46px;
+  background: white;
 
-  background:white;
+  border: 1px solid #cfd8d1;
 
-  border:1px solid #cfd8d1;
+  border-radius: 5px;
 
-  border-radius:5px;
+  padding: 7px 35px 7px 12px;
 
-  padding:7px 35px 7px 12px;
-
-  text-align:left;
-
+  text-align: left;
 }
-
-
 
 .date-field span,
 .guest-select span {
+  display: block;
 
-  display:block;
+  font-size: 10px;
 
-  font-size:10px;
-
-  color:#7a847d;
-
+  color: #7a847d;
 }
-
-
 
 .date-field strong,
 .guest-select strong {
+  display: block;
 
-  display:block;
+  color: var(--text-dark);
 
-  color:var(--text-dark);
-
-  font-size:12px;
-
+  font-size: 12px;
 }
-
-
 
 .date-field img,
 .guest-select img {
+  position: absolute;
 
-  position:absolute;
+  right: 12px;
 
-  right:12px;
+  top: 50%;
 
-  top:50%;
+  transform: translateY(-50%);
 
-  transform:translateY(-50%);
+  width: 14px;
 
-  width:14px;
-
-  height:14px;
-
+  height: 14px;
 }
-
-
 
 /* Guests */
 
 .guest-select {
+  position: relative;
 
-  position:relative;
+  width: 100%;
 
-  width:100%;
+  height: 58px;
 
-  height:58px;
+  margin-top: 8px;
 
-  margin-top:8px;
+  background: white;
 
-  background:white;
+  border: 1px solid #cfd8d1;
 
-  border:1px solid #cfd8d1;
+  border-radius: 5px;
 
-  border-radius:5px;
+  padding: 8px 40px 8px 12px;
 
-  padding:8px 40px 8px 12px;
-
-  text-align:left;
-
+  text-align: left;
 }
-
-
 
 /* Availability */
 
 .availability {
+  display: flex;
 
-  display:flex;
+  align-items: center;
 
-  align-items:center;
+  gap: 8px;
 
-  gap:8px;
+  margin-top: 6px;
 
-  margin-top:6px;
+  padding: 10px;
 
-  padding:10px;
+  background: #edf6fb;
 
-  background:#edf6fb;
+  border: 1px solid #d5e7ef;
 
-  border:1px solid #d5e7ef;
+  border-radius: 4px;
 
-  border-radius:4px;
+  color: #66737b;
 
-  color:#66737b;
-
-  font-size:12px;
-
+  font-size: 12px;
 }
-
-
 
 .availability svg {
+  width: 20px;
 
-  width:20px;
-
-  height:20px;
-
+  height: 20px;
 }
-
-
 
 /* Price */
 
 .price-summary {
+  margin: 8px 0 8px 0;
 
-  margin:8px 0 8px 0;
+  border: 1px solid #e5e5e5;
 
-  border:1px solid #e5e5e5;
-
-  border-radius:4px;
+  border-radius: 4px;
 
   padding: 4px;
 }
 
-.price-row-night, .price-row-total {
-  
-  display:flex;
+.price-row-night,
+.price-row-total {
+  display: flex;
 
-  justify-content:space-between;
+  justify-content: space-between;
 
-  color:#68736c;
+  color: #68736c;
 
   font-size: 10px;
 
-  padding:8px 4px;
-
+  padding: 8px 4px;
 }
 
 .price-row-total {
-
   font-weight: 600;
   font-size: 16px;
-  color:var(--text-dark);
-
+  color: var(--text-dark);
 }
 
 .price-row-total {
-
-  border-top:1px solid #eeeeee;
-
+  border-top: 1px solid #eeeeee;
 }
 
-.booking-redirect {  
+.booking-redirect {
   margin: 4px 0 4px 0;
   display: flex;
   align-items: center;
@@ -1100,45 +1036,41 @@ button {
 /* Button */
 
 .check-button {
+  width: 100%;
 
-  width:100%;
+  height: 48px;
 
-  height:48px;
+  border: none;
 
-  border:none;
+  border-radius: 4px;
 
-  border-radius:4px;
+  background: #6ecbe0;
 
-  background:#6ecbe0;
+  color: #12313b;
 
-  color:#12313b;
+  font-size: 14px;
 
-  font-size:14px;
+  font-weight: 700;
 
-  font-weight:700;
+  letter-spacing: 0.5px;
 
-  letter-spacing:.5px;
-
-  cursor:pointer;
-
+  cursor: pointer;
 }
 
 .check-button:hover {
-  background:#59aeb9;
+  background: #59aeb9;
 }
 
 /* Booking redirect */
 
 .booking-redirect {
+  text-align: center;
 
-  text-align:center;
+  font-size: 12px;
 
-  font-size:12px;
+  padding: 12px 0;
 
-  padding:12px 0;
-
-  color:#59655f;
-
+  color: #59655f;
 }
 
 .booking-redirect img {
@@ -1150,83 +1082,65 @@ button {
 }
 
 .booking-redirect strong {
+  color: #003b7a;
 
-  color:#003b7a;
-
-  font-size:15px;
-
+  font-size: 15px;
 }
-
-
 
 /* Hot Deal */
 
 .hot-deal {
+  display: flex;
 
-  display:flex;
+  align-items: center;
 
-  align-items:center;
+  justify-content: center;
 
-  justify-content:center;
+  gap: 8px;
 
-  gap:8px;
+  margin: 0 -18px;
 
-  margin:0 -18px;
+  padding: 10px;
 
-  padding:10px;
+  background: #eef6fb;
 
-  background:#eef6fb;
+  border-top: 1px solid var(--border);
 
-  border-top:1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 
-  border-bottom:1px solid var(--border);
-
-  font-size:12px;
-
+  font-size: 12px;
 }
-
-
 
 .hot-deal img {
+  width: 16px;
 
-  width:16px;
-
-  height:16px;
-
+  height: 16px;
 }
-
-
 
 /* Alternative */
 
 .alternative-stay {
+  margin-top: 10px;
 
-  margin-top:10px;
+  padding: 12px;
 
-  padding:12px;
+  text-align: center;
 
-  text-align:center;
+  background: #eef6fb;
 
-  background:#eef6fb;
+  border: 1px solid #d5e7ef;
 
-  border:1px solid #d5e7ef;
+  border-radius: 8px;
 
-  border-radius:8px;
+  font-size: 12px;
 
-  font-size:12px;
-
-  color:#394641;
-
+  color: #394641;
 }
 
-
-
 .alternative-stay a {
+  color: #3b8bb5;
 
-  color:#3b8bb5;
-
-  text-decoration:underline;
-
+  text-decoration: underline;
 }
 
 /* ==========================================
@@ -1275,11 +1189,9 @@ button {
 }
 
 .filter-button img {
+  width: 14px;
 
-  width:14px;
-
-  height:14px;
-
+  height: 14px;
 }
 /* Main layout */
 
@@ -1910,11 +1822,7 @@ button {
   justify-content: center;
   gap: 40px;
   padding: 22px 36px;
-  background: linear-gradient(
-    90deg,
-    #005e7e 0%,
-    var(--teal-accent) 100%
-  );
+  background: linear-gradient(90deg, #005e7e 0%, var(--teal-accent) 100%);
   color: var(--white);
 }
 
@@ -2003,7 +1911,8 @@ button {
   border: 2px solid var(--teal-accent);
   border-radius: 50%;
   padding: 4px;
-  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%) hue-rotate(125deg) brightness(96%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%)
+    hue-rotate(125deg) brightness(96%) contrast(102%);
 }
 
 .season-card h4 {
@@ -2024,6 +1933,10 @@ button {
   border: none;
   border-top: 1px solid var(--border);
   margin: 18px 0;
+}
+
+.seasons-carousel {
+  display: none;
 }
 
 .season-card__temp h5 {
@@ -2098,7 +2011,8 @@ button {
 .course-card__distance img {
   width: 18px;
   height: 18px;
-  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%) hue-rotate(125deg) brightness(96%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(43%) sepia(86%) saturate(601%)
+    hue-rotate(125deg) brightness(96%) contrast(102%);
 }
 
 .course-card__stats {
@@ -2196,7 +2110,6 @@ button {
 .carousel-nav__btn:hover {
   background: var(--green-soft);
 }
-
 
 /* ==========================================================================
    FOOTER
@@ -2413,4 +2326,1064 @@ button {
   font-size: 12px;
 
   color: var(--footer-text);
+}
+
+/* ==========================================
+   DESKTOP
+========================================== */
+
+@media (max-width: 1570px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1330px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .course-section {
+    padding: 20px 0 24px;
+  }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  .logo-icon {
+    width: 40px;
+
+    height: 40px;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+
+  .nav-links-desktop {
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  /* ==========================================
+     BUTTONS
+  ========================================== */
+
+  .btn {
+    height: 38px;
+
+    padding: 0 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: 12px;
+  }
+
+  /* ==========================================
+     NAV SEARCH
+  ========================================== */
+
+  .nav-search {
+    height: 38px;
+    width: 180px;
+  }
+
+  .course-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 8px;
+  }
+}
+
+/* ==========================================
+   TABLET + SMALL LAPTOP
+========================================== */
+
+@media (max-width: 1170px) {
+  .container {
+    padding-inline: 12px;
+  }
+
+  .course-section {
+    padding: 16px 0 20px;
+  }
+
+  .site-header {
+    padding: 16px 0;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .btn {
+    height: 38px;
+
+    padding: 0 20px;
+  }
+
+  .nav-search {
+    height: 38px;
+
+    width: 180px;
+  }
+
+  /* Course section */
+
+  .course-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .course-overview-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+  }
+
+  .course-overview-title,
+  .course-highlight-grid {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .highlight-button {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .gallery {
+    position: relative;
+    height: auto;
+    border-radius: 8px;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-side {
+    display: none;
+  }
+
+  .gallery-carousel {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 40px);
+    display: flex;
+    gap: 4px;
+  }
+
+  .gallery-carousel-filled {
+    width: 10px;
+    height: 10px;
+    color: white;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .gallery-carousel-blank {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+  }
+
+  .booking-card {
+    display: none;
+  }
+
+  /* ==========================================
+    STAY & PLAY QUICK PANEL (tablet + mobile only)
+    ========================================== */
+
+  .stay-play-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin: 16px 0px;
+    height: 100%;
+  }
+
+  .stay-play-col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .stay-play-col__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .stay-play-col__header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+
+  .stay-play-col--stay .stay-play-col__header h3 {
+    color: var(--blue-accent);
+  }
+
+  .stay-play-col--play .stay-play-col__header h3 {
+    color: var(--green-primary);
+  }
+
+  .stay-play-col__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .stay-play-col__icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .stay-play-col__icon--stay {
+    background: radial-gradient(circle, var(--blue-accent) 0%, #3a9ab8 100%);
+  }
+
+  .stay-play-col__icon--play {
+    background: radial-gradient(circle, #9ed46b 0%, #7cc24a 100%);
+  }
+
+  .stay-play-col__cta--stay-text-mobile {
+    display: none;
+  }
+
+  .stay-play-col__content {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+  }
+
+  .stay-play-col__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 14px 10px;
+    margin-bottom: 14px;
+  }
+
+  .stay-play-col__box--triple {
+    gap: 6px;
+  }
+
+  .stay-play-col__divider {
+    width: 1px;
+    align-self: stretch;
+    background: var(--border);
+  }
+
+  .stay-play-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    flex: 1;
+  }
+
+  .stay-play-stat strong {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .stay-play-stat span {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .stay-play-stat__prefix {
+    margin-bottom: 2px;
+  }
+
+  .stay-play-col__cta {
+    width: 100%;
+    height: 46px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+  }
+
+  .stay-play-col__cta--stay {
+    background: #6ecbe0;
+    color: #0d2f3a;
+  }
+
+  .stay-play-col__cta--stay:hover {
+    background: #59bcd4;
+  }
+
+  .stay-play-col__cta--play {
+    background: var(--accent);
+    color: var(--button-text);
+  }
+
+  .stay-play-col__cta--play:hover {
+    background: var(--accent-hover);
+  }
+
+  /* Nearby stay section */
+
+  .stay-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-content > :last-child {
+    order: -1;
+  }
+
+  .stay-map {
+    min-height: 400px;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Club highlights section */
+
+  .club-highlights {
+    padding: 30px 0;
+    margin: 0px;
+  }
+
+  .club-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .special-packages {
+    padding: 0px 16px 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .course-features {
+    padding: 20px 0 20px;
+  }
+
+  .course-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-section {
+    padding: 16px 0 16px;
+  }
+
+  .other-courses {
+    display: none;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .club-features-grid::after {
+    height: 0px;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 760px) {
+  .nav-container {
+    gap: 12px;
+  }
+
+  .logo {
+    min-width: 0;
+  }
+
+  .nav-menu {
+    flex-shrink: 0;
+    gap: 12px;
+  }
+
+  #tee-button {
+    width: 42px;
+    min-width: 42px;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  #tee-button p {
+    display: none;
+  }
+
+  #tee-button img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+  }
+
+  .nav-search {
+    width: 42px;
+    min-width: 42px;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .nav-search input {
+    display: none;
+  }
+
+  .forecast-strip {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .forecast-strip__current {
+    border-right: none;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .forecast-strip__days {
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .forecast-day__label,
+  .forecast-day__temp {
+    font-size: 10px;
+  }
+
+  .forecast-day img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+  /* ==========================================
+   HEADER
+========================================== */
+
+  .container {
+    padding-inline: 10px;
+  }
+
+  .course-section {
+    padding: 16px 0 20px;
+  }
+
+  .site-header {
+    padding: 16px 0;
+  }
+
+  .logo {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .logo-text {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    min-width: 0;
+    gap: 12px;
+    padding: 4px 0;
+  }
+
+  .nav-menu {
+    flex-shrink: 0;
+    gap: 12px;
+  }
+
+  #tee-button {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  #tee-button p {
+    display: none;
+  }
+
+  #tee-button img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+  }
+
+  .nav-search input {
+    display: none;
+  }
+
+  .nav-search {
+    height: 42px;
+    width: 42px;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Course */
+
+  .course-header h1 {
+    font-size: 26px;
+  }
+
+  .course-meta {
+    flex-wrap: wrap;
+  }
+
+  .course-overview-bar {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .course-overview-title,
+  .course-highlight-grid,
+  .highlight-button {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: center;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .course-highlight-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .gallery-side {
+    height: 160px;
+  }
+
+  .stay-play-col {
+    align-items: center;
+  }
+
+  .stay-play-col__box {
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+
+  .stay-play-col__content {
+    border: none;
+    padding: 0px;
+  }
+
+  .stay-play-col__divider,
+  #from-price,
+  #off-peak-price,
+  #twilight-price,
+  .stay-play-col__cta--stay-text {
+    display: none;
+  }
+
+  .stay-play-stat {
+    gap: 2px;
+    flex: 1;
+  }
+
+  .stay-play-col__header {
+    margin-bottom: 0px;
+  }
+
+  .stay-play-col__header h3 {
+    font-size: 28px;
+  }
+
+  .stay-play-stat strong {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .stay-play-stat span {
+    width: 96px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--text-dark);
+  }
+
+  .stay-play-col__cta {
+    border-radius: 24px;
+    border: none;
+  }
+
+  .stay-play-col__cta--stay-text-mobile {
+    display: block;
+  }
+
+  /* Nearby stay section */
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-section-header h2 {
+    font-size: 20px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  .stay-map,
+  .stay-controls nav {
+    display: none;
+  }
+
+  .stay-controls {
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .stay-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .stay-carousel-filled {
+    width: 16px;
+    height: 16px;
+    background-color: var(--accent);
+    border-radius: 50%;
+  }
+  .stay-carousel-blank {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+  }
+  /* Club highlights section */
+
+  .club-highlights {
+    padding: 20px 0;
+  }
+
+  .club-highlights-panel {
+    padding: 24px;
+  }
+
+  .club-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .club-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .special-packages {
+    padding: 0px 10px 16px;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+  }
+
+  .course-features-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature-panel {
+    padding: 20px;
+  }
+
+  .forecast-strip {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forecast-current-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .forecast-current-mobile img {
+    width: 54px;
+    height: 54px;
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+
+  .forecast-current-mobile span {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-white);
+  }
+
+  .forecast-strip__current {
+    text-align: center;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .forecast-strip__days {
+    display: flex;
+    gap: 14px;
+  }
+
+  .forecast-day img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .forecast-day span {
+    font-size: 10px;
+  }
+
+  .weather-section {
+    padding: 12px 0 12px;
+  }
+
+  .seasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .forecast-strip {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .seasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .season-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seasons-carousel {
+    height: 4px;
+    padding: 22px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .seasons-carousel div {
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .seasons-carousel-filled {
+    background-color: var(--accent);
+  }
+
+  .seasons-carousel-blank {
+    background-color: #b4d6bd;
+  }
+
+  .course-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-courses__controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Footer */
+
+  .footer-links {
+    grid-template-columns: repeat(2, 150px);
+  }
+
+  .selectors {
+    flex-direction: column;
+  }
+
+  .select-box {
+    width: 100%;
+  }
+
+  .brand-area {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  /* Footer background */
+
+  .travel-footer {
+    background-image: var(--footer-bg-mobile);
+
+    background-position: center;
+  }
+}
+
+/* ==========================================
+     EXTRA SMALL MOBILE
+  ========================================== */
+
+@media (max-width: 500px) {
+  .club-features-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+
+  .gallery-side {
+    display: none;
+  }
+
+  .course-meta {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding-inline: 8px;
+  }
+
+  .nav-container {
+    padding: 0;
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    gap: 8px;
+  }
+
+  #tee-button,
+  .nav-search,
+  .hamburger-menu {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+
+  .course-highlight-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .course-overview-bar,
+  .course-highlight,
+  .highlight-button {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .highlight-button {
+    white-space: normal;
+    height: auto;
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  .stay-play-panel {
+    flex-direction: column;
+  }
+
+  .stay-play-stat span {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .forecast-strip {
+    padding: 16px 12px;
+  }
+
+  .forecast-strip__current {
+    white-space: normal;
+  }
+
+  .forecast-strip__days {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .forecast-strip__days {
+    gap: 8px;
+  }
+
+  .forecast-day img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .forecast-day span {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 315px) {
+  .container {
+    padding-inline: 8px;
+  }
+
+  .logo {
+    gap: 4px;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    gap: 4px;
+  }
+
+  #tee-button,
+  .nav-search,
+  .hamburger-menu {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  #tee-button img,
+  .hamburger-menu svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .course-overview-bar {
+    padding: 12px;
+  }
+
+  .course-overview-title h2 {
+    font-size: 14px;
+  }
+
+  .highlight-button {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .club-highlights-panel,
+  .feature-panel,
+  .forecast-strip,
+  .seasons {
+    padding: 12px;
+  }
 }
