@@ -111,12 +111,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 .course-main-content {
   min-width: 0;
 }
