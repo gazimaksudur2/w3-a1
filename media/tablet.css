@@ -295,7 +295,7 @@
     .club-highlights {
         padding: 30px 0;
         margin: 0px;
-      }
+    }
 
     .club-highlights-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -310,7 +310,7 @@
 
     .course-features {
         padding: 20px 0 20px;
-      }
+    }
 
     .course-card-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -318,7 +318,11 @@
 
     .weather-section {
         padding: 16px 0 16px;
-      }
+    }
+
+    .other-courses {
+        display: none;
+    }
 
     /* Footer */
 
@@ -329,21 +333,90 @@
     .footer-right {
         width: 100%;
     }
-
-    .footer-links {
-        grid-template-columns: repeat(2, 150px);
-    }
 }
 
 @media (max-width: 850px) {
     .club-features-grid::after {
         height: 0px;
     }
+
     .property-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .reviews-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-      }
+    }
+}
+
+@media (min-width: 651px) and (max-width: 760px) {
+    .nav-container {
+        gap: 12px;
+    }
+
+    .logo {
+        min-width: 0;
+    }
+
+    .nav-menu {
+        flex-shrink: 0;
+        gap: 12px;
+    }
+
+    #tee-button {
+        width: 42px;
+        min-width: 42px;
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+    #tee-button p {
+        display: none;
+    }
+
+    #tee-button img {
+        display: block;
+        width: 22px;
+        height: 22px;
+        padding: 0;
+    }
+
+    .nav-search {
+        width: 42px;
+        min-width: 42px;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .nav-search input {
+        display: none;
+    }
+
+    .forecast-strip {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .forecast-strip__current {
+        border-right: none;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .forecast-strip__days {
+        width: 100%;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .forecast-day__label,
+    .forecast-day__temp {
+        font-size: 10px;
+    }
+
+    .forecast-day img {
+        width: 28px;
+        height: 28px;
+    }
 }
